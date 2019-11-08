@@ -130,10 +130,10 @@ void	ft_get_args(int num, char **args)
 	ft_checkinstructions(&a, len);//функция приема инструкций
 }
 
-int		main(int num, char **args)
+/*int		main(int num, char **args)
 {
 	printf("stack a: stack b:\n");
 	if (num != 1)
 		ft_get_args(num, args);
 	return (0);
-}
+}*/
