@@ -20,7 +20,7 @@ int				ft_bot(t_stack *a)
 
 int				ft_maximum(t_stack *a)
 {
-	if (a->array[0] > a->array[2] && a->array[0] > a->array[2])
+	if (a->array[0] > a->array[2])
 		return (a->array[0]);
 	if (a->array[1] > a->array[0] && a->array[1] > a->array[2])
 		return (a->array[1]);
@@ -119,21 +119,10 @@ void			ft_firstdo(t_stack *a, t_stack *b)
 		}
 		else
 		{
-			ft_ra(a);
-			write(1, "ra\n", 3);
-		}
-	}
-	while (a->size > 2)
-	{
-		if (a->array[0] != min && a->array[0] != max)
-		{
 			ft_pb(a, b);
 			write(1, "pb\n", 3);
-		}
-		else
-		{
-			ft_ra(a);
-			write(1, "ra\n", 3);
+			ft_ra(b);
+			write(1, "rb\n", 3);
 		}
 	}
 }
@@ -145,6 +134,17 @@ int				ft_find_index(t_stack *a, int value)
 	i = -1;
 	while (++i < (int)a->size)
 		if (a->array[i] > value)
+			return (i);
+	return (i);
+}
+
+int 			ft_find_value(t_stack *a, int value)
+{
+	int 	i;
+
+	i = -1;
+	while (++i < (int)a->size)
+		if (a->array[i] == value)
 			return (i);
 	return (i);
 }
@@ -194,7 +194,7 @@ void			ft_sort(t_stack *a, t_stack *b)
 			}
 		ft_pa(a, b);
 		write(1, "pa\n", 3);
-		if (ft_find_index(a, ft_minimum(a)) < (int)a->size / 2)
+		if (ft_find_value(a, ft_minimum(a)) < (int)(a->size / 2))
 			while (!ft_whilenot(a))
 			{
 				ft_ra(a);
@@ -216,9 +216,7 @@ int				ft_whilenot(t_stack *a)
 	i = -1;
 	while (++i < (int)(a->size - 1))
 		if (a->array[i] > a->array[i + 1])
-		{
 			return (0);
-		}
 	return (1);
 }
 
@@ -235,8 +233,6 @@ void			try_solve(t_stack *a)
 		ft_firstdo(a, &b);
 		ft_sort(a, &b);
 	}
-	/*for (int i = 0; i < 25; i++)
-		printf("%i: %i %i\n", i, a->array[i], b.array[i]);*/
 }
 
 static	void	ft_get_args(int num, char **args)

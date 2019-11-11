@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/tgarkbit/Desktop/push_swap/Libft/libft.h
+/Users/tgarkbit/Desktop/Push_Swap/Libft/libft.h
 stdlib.h
 -
 unistd.h
 -
 
-/Users/tgarkbit/Desktop/push_swap/push_swap.h
+/Users/tgarkbit/Desktop/Push_Swap/push_swap.h
 stdio.h
 -
 push_swap.h
-/Users/tgarkbit/Desktop/push_swap/push_swap.h
+/Users/tgarkbit/Desktop/Push_Swap/push_swap.h
 Libft/libft.h
-/Users/tgarkbit/Desktop/push_swap/Libft/libft.h
+/Users/tgarkbit/Desktop/Push_Swap/Libft/libft.h
 
-/Users/tgarkbit/Desktop/push_swap/push_swap_main.c
+/Users/tgarkbit/Desktop/Push_Swap/push_swap_main.c
 push_swap.h
-/Users/tgarkbit/Desktop/push_swap/push_swap.h
+/Users/tgarkbit/Desktop/Push_Swap/push_swap.h
 
