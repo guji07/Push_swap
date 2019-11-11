@@ -96,6 +96,22 @@ void	ft_checkinstructions(t_stack *a, int len)
 	ft_sorted(a, b.size);
 }
 
+static	void		ft_free_ar(char **ar)
+{
+	int j;
+
+	j = 0;
+	while (ar[j])
+	{
+		free(ar[j]);
+		ft_bzero(ar[j], ft_strlen(ar[j]));
+		j--;
+		free(ar);
+	}
+	free(ar[j]);
+	return ;
+}
+
 void	ft_get_args(int num, char **args)
 {
 	char		*str;
@@ -127,13 +143,14 @@ void	ft_get_args(int num, char **args)
 	while (arr[++i])
 		a.array[i] = ft_atoi(arr[i]);//создаем стек А из аргументов
 	a.size = i;
+	ft_free_ar(arr);
 	ft_checkinstructions(&a, len);//функция приема инструкций
 }
 
-/*int		main(int num, char **args)
+int		main(int num, char **args)
 {
 	printf("stack a: stack b:\n");
 	if (num != 1)
 		ft_get_args(num, args);
 	return (0);
-}*/
+}

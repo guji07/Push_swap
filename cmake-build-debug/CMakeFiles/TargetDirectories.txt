@@ -1,0 +1,3 @@
+C:/Users/Public/Documents/ClionProjects/Push_swap/cmake-build-debug/CMakeFiles/pushswap.dir
+C:/Users/Public/Documents/ClionProjects/Push_swap/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Public/Documents/ClionProjects/Push_swap/cmake-build-debug/CMakeFiles/rebuild_cache.dir

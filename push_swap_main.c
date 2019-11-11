@@ -1,16 +1,69 @@
 #include "push_swap.h"
 
-void			try_solve(t_stack *a, int len)
+int				ft_min(t_stack *a)
+{
+	if (a->array[0] < a->array[1] && a->array[0] < a->array[2])
+		return (a->array[0]);
+	else if (a->array[1] < a->array[0] && a->array[1] < a->array[2])
+		return (a->array[1]);
+	return (a->array[2]);
+}
+
+int				ft_bot(t_stack *a)
+{
+	if (a->array[0] > a->array[1] && a->array[0] < a->array[2])
+		return (a->array[0]);
+	if (a->array[1] > a->array[0] && a->array[1] < a->array[2])
+		return (a->array[1]);
+	return (a->array[2]);
+}
+
+int				ft_max(t_stack *a)
+{
+	if (a->array[0] > a->array[2] && a->array[0] > a->array[2])
+		return (a->array[0]);
+	if (a->array[1] > a->array[0] && a->array[1] > a->array[2])
+		return (a->array[1]);
+	return (a->array[2]);	
+}	
+
+void			ft_three(t_stack *a)
+{
+	int		min;
+	int		bot;
+	int		max;
+
+	min = ft_min(a);
+	bot = ft_bot(a);
+	max = ft_max(a);
+	if (a->array[0] == bot && a->array[1] == min)
+		write(1, "sa\n", 3);
+	if (a->array[0] == max && a->array[1] == bot)
+		write(1, "sa\nrra\n", 7);
+	if (a->array[0] == max && a->array[1] == min)
+		write(1, "ra\n", 3);	
+	if (a->array[0] == min && a->array[1] == max)
+		write(1, "sa\nra\n", 6);
+	if (a->array[0] == bot && a->array[1] == max)
+		write(1, "rra\n", 4);
+}
+
+void			ft_malo(t_stack *a)
 {
 	if (a->size == 1)
 		ft_die("OK");
-	if (a->size)
-	{
-		if (a->array[0] > a->array[1])
+	if (a->array[0] > a->array[1])
 			ft_die("ra");
 		else
 			ft_die("Sorted");
-	}
+}
+
+void			try_solve(t_stack *a)
+{
+	if (a->size < 3)
+		ft_malo(a);
+	else if (a->size == 3)
+		ft_three(a);
 }
 
 static	void	ft_get_args(int num, char **args)
@@ -44,7 +97,8 @@ static	void	ft_get_args(int num, char **args)
 	while (arr[++i])
 		a.array[i] = ft_atoi(arr[i]);//создаем стек А из аргументов
 	a.size = i;
-	try_solve(&a, len);
+	ft_free_ar(arr);
+	try_solve(&a);
 }
 
 int 	main(int num, char **args)
