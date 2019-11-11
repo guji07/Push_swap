@@ -3,6 +3,8 @@ project(pushswap C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(pushswap Libft/libft.a checker_main.c commands1.c commands2.c push_swap.h push_swap_main.c)
+add_executable(pushswap Libft/libft.a push_swap_main.c commands1.c commands2.c push_swap.h)
+add_executable(checker Libft/libft.a checker_main.c commands1.c commands2.c push_swap.h)
 
+target_link_libraries(checker ${CMAKE_SOURCE_DIR}/Libft/libft.a)
 target_link_libraries(pushswap ${CMAKE_SOURCE_DIR}/Libft/libft.a)

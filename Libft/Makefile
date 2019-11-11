@@ -25,7 +25,7 @@ FLAGS = -Wall -Werror -Wextra
 NAME = libft.a
 all: $(NAME)
 $(NAME):$(OBJECTS)
-	@ar -rc $(NAME) $(OBJECTS)
+	@ar -rcs $(NAME) $(OBJECTS)
 	@ranlib $(NAME)
 	@echo libft compiled
 %.o: %.c $(HEADER)

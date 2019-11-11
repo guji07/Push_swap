@@ -51,8 +51,9 @@ void	ft_makeinstructions(t_stack *a, t_stack *b, int cmd)
 		ft_rra(b);
 	if (cmd == 11)
 		ft_rrr(a, b);
-	for (int i = 0; i < 5; i++)
+	/*for (int i = 0; i < 25; i++)
 		printf("%i: %i   %i\n", i, (*a).array[i], (*b).array[i]);
+	ft_putstr("\n");*/
 }
 
 void	ft_sorted(t_stack *a, int c)
@@ -91,12 +92,11 @@ void	ft_checkinstructions(t_stack *a, int len)
 		}
 		else
 			ft_makeinstructions(a, &b, cmd);//выполняем очередную команду
-		free(str);
 	}
 	ft_sorted(a, b.size);
 }
 
-static	void		ft_free_ar(char **ar)
+/*static	void		ft_free_ar(char **ar)
 {
 	int j;
 
@@ -110,7 +110,7 @@ static	void		ft_free_ar(char **ar)
 	}
 	free(ar[j]);
 	return ;
-}
+}*/
 
 void	ft_get_args(int num, char **args)
 {
@@ -134,7 +134,6 @@ void	ft_get_args(int num, char **args)
 		return ;
 	}
 	arr = ft_strsplit(str, ' ');//теперь каждую цифру в отдельный массив
-	free(str);
 	i = 0;
 	while (arr[i])
 		i++;
@@ -143,13 +142,12 @@ void	ft_get_args(int num, char **args)
 	while (arr[++i])
 		a.array[i] = ft_atoi(arr[i]);//создаем стек А из аргументов
 	a.size = i;
-	ft_free_ar(arr);
 	ft_checkinstructions(&a, len);//функция приема инструкций
 }
 
 int		main(int num, char **args)
 {
-	printf("stack a: stack b:\n");
+	/*printf("stack a: stack b:\n");*/
 	if (num != 1)
 		ft_get_args(num, args);
 	return (0);

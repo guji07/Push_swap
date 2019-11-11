@@ -1,3 +1,1 @@
-"C:\Program Files\JetBrains\CLion 2019.2\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\pushswap.dir/objects.a
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\pushswap.dir/objects.a @CMakeFiles\pushswap.dir\objects1.rsp
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\pushswap.dir/objects.a -Wl,--no-whole-archive  -o pushswap.exe -Wl,--out-implib,libpushswap.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\pushswap.dir\linklibs.rsp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/pushswap.dir/push_swap_main.c.o CMakeFiles/pushswap.dir/commands1.c.o CMakeFiles/pushswap.dir/commands2.c.o  -o pushswap ../Libft/libft.a 

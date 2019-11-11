@@ -18,5 +18,5 @@ void	ft_ra(t_stack *a);
 void	ft_rr(t_stack *a, t_stack *b);
 void	ft_rra(t_stack *a);
 void	ft_rrr(t_stack *a, t_stack *b);
-
+int 	ft_whilenot(t_stack *a);
 #endif //PUSHSWAP_PUSH_SWAP_H

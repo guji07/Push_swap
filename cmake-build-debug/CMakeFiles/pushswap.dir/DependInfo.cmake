@@ -4,12 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/Public/Documents/ClionProjects/Push_swap/checker_main.c" "C:/Users/Public/Documents/ClionProjects/Push_swap/cmake-build-debug/CMakeFiles/pushswap.dir/checker_main.c.obj"
-  "C:/Users/Public/Documents/ClionProjects/Push_swap/commands1.c" "C:/Users/Public/Documents/ClionProjects/Push_swap/cmake-build-debug/CMakeFiles/pushswap.dir/commands1.c.obj"
-  "C:/Users/Public/Documents/ClionProjects/Push_swap/commands2.c" "C:/Users/Public/Documents/ClionProjects/Push_swap/cmake-build-debug/CMakeFiles/pushswap.dir/commands2.c.obj"
-  "C:/Users/Public/Documents/ClionProjects/Push_swap/push_swap_main.c" "C:/Users/Public/Documents/ClionProjects/Push_swap/cmake-build-debug/CMakeFiles/pushswap.dir/push_swap_main.c.obj"
+  "/Users/tgarkbit/Desktop/push_swap/commands1.c" "/Users/tgarkbit/Desktop/push_swap/cmake-build-debug/CMakeFiles/pushswap.dir/commands1.c.o"
+  "/Users/tgarkbit/Desktop/push_swap/commands2.c" "/Users/tgarkbit/Desktop/push_swap/cmake-build-debug/CMakeFiles/pushswap.dir/commands2.c.o"
+  "/Users/tgarkbit/Desktop/push_swap/push_swap_main.c" "/Users/tgarkbit/Desktop/push_swap/cmake-build-debug/CMakeFiles/pushswap.dir/push_swap_main.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
