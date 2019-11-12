@@ -136,6 +136,33 @@ pushswap/fast:
 	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/build
 .PHONY : pushswap/fast
 
+Libft/ft_free_ar.o: Libft/ft_free_ar.c.o
+
+.PHONY : Libft/ft_free_ar.o
+
+# target to build an object file
+Libft/ft_free_ar.c.o:
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/Libft/ft_free_ar.c.o
+.PHONY : Libft/ft_free_ar.c.o
+
+Libft/ft_free_ar.i: Libft/ft_free_ar.c.i
+
+.PHONY : Libft/ft_free_ar.i
+
+# target to preprocess a source file
+Libft/ft_free_ar.c.i:
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/Libft/ft_free_ar.c.i
+.PHONY : Libft/ft_free_ar.c.i
+
+Libft/ft_free_ar.s: Libft/ft_free_ar.c.s
+
+.PHONY : Libft/ft_free_ar.s
+
+# target to generate assembly for a file
+Libft/ft_free_ar.c.s:
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/Libft/ft_free_ar.c.s
+.PHONY : Libft/ft_free_ar.c.s
+
 checker_main.o: checker_main.c.o
 
 .PHONY : checker_main.o
@@ -260,6 +287,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... checker"
 	@echo "... pushswap"
+	@echo "... Libft/ft_free_ar.o"
+	@echo "... Libft/ft_free_ar.i"
+	@echo "... Libft/ft_free_ar.s"
 	@echo "... checker_main.o"
 	@echo "... checker_main.i"
 	@echo "... checker_main.s"

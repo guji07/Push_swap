@@ -122,6 +122,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/tgarkbit/Desktop/push_swap/Libft/ft_free_ar.c">
+			<Option target="pushswap"/>
+		</Unit>
 		<Unit filename="/Users/tgarkbit/Desktop/push_swap/Libft/libft.a">
 			<Option target="checker"/>
 			<Option target="pushswap"/>

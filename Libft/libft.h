@@ -53,7 +53,7 @@ int					ft_isascii(int ch);
 int					ft_isprint(int ch);
 int					ft_toupper(int ch);
 int					ft_tolower(int ch);
-
+void				ft_free_ar(int n, char **ar);
 void				*ft_memalloc(size_t size);
 void				ft_memdel(void **ap);
 char				*ft_strnew(size_t size);

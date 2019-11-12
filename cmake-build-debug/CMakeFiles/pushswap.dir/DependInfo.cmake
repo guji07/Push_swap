@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/tgarkbit/Desktop/push_swap/Libft/ft_free_ar.c" "/Users/tgarkbit/Desktop/push_swap/cmake-build-debug/CMakeFiles/pushswap.dir/Libft/ft_free_ar.c.o"
   "/Users/tgarkbit/Desktop/push_swap/commands1.c" "/Users/tgarkbit/Desktop/push_swap/cmake-build-debug/CMakeFiles/pushswap.dir/commands1.c.o"
   "/Users/tgarkbit/Desktop/push_swap/commands2.c" "/Users/tgarkbit/Desktop/push_swap/cmake-build-debug/CMakeFiles/pushswap.dir/commands2.c.o"
   "/Users/tgarkbit/Desktop/push_swap/push_swap_main.c" "/Users/tgarkbit/Desktop/push_swap/cmake-build-debug/CMakeFiles/pushswap.dir/push_swap_main.c.o"

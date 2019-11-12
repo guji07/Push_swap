@@ -43,21 +43,6 @@ static	int			ft_wordlen(char *s, char c)
 	return (i);
 }
 
-static	void		ft_free_ar(int n, char **ar)
-{
-	int j;
-
-	j = n;
-	while (j >= 0)
-	{
-		free(ar[j]);
-		ft_bzero(ar[j], ft_strlen(ar[j]));
-		j--;
-		free(ar);
-	}
-	return ;
-}
-
 static	char		*ft_crnw(char *s, char **ar, int num, char c)
 {
 	int		n;

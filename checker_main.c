@@ -51,9 +51,6 @@ void	ft_makeinstructions(t_stack *a, t_stack *b, int cmd)
 		ft_rra(b);
 	if (cmd == 11)
 		ft_rrr(a, b);
-	/*for (int i = 0; i < 25; i++)
-		printf("%i: %i   %i\n", i, (*a).array[i], (*b).array[i]);
-	ft_putstr("\n");*/
 }
 
 void	ft_sorted(t_stack *a, int c)
@@ -95,22 +92,6 @@ void	ft_checkinstructions(t_stack *a, int len)
 	}
 	ft_sorted(a, b.size);
 }
-
-/*static	void		ft_free_ar(char **ar)
-{
-	int j;
-
-	j = 0;
-	while (ar[j])
-	{
-		free(ar[j]);
-		ft_bzero(ar[j], ft_strlen(ar[j]));
-		j--;
-		free(ar);
-	}
-	free(ar[j]);
-	return ;
-}*/
 
 void	ft_get_args(int num, char **args)
 {

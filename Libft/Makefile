@@ -7,7 +7,7 @@ SRCS =      ft_atoi.c       ft_isascii.c    ft_memalloc.c   ft_memcpy.c     ft_p
             ft_memset.c     ft_putendl_fd.c ft_putstr_fd.c  ft_strcmp.c     ft_strequ.c     ft_strlcat.c    ft_strncat.c \
             ft_strnew.c     ft_strstr.c     ft_toupper.c    ft_lstdelone.c  ft_lstnew.c     ft_lstdel.c		ft_lstadd.c  \
 			ft_lstiter.c    ft_lstmap.c     get_next_line.c	ft_max.c		ft_putupstr.c	ft_putnstr.c	ft_pow.c	 \
-			ft_strcatspace.c                ft_die.c        ft_intmalloc.c                                               \
+			ft_strcatspace.c                ft_die.c        ft_intmalloc.c  ft_free_ar.c                                 \
 
 OBJECTS	=   ft_atoi.o       ft_isascii.o    ft_memalloc.o   ft_memcpy.o     ft_putchar.o    ft_putnbr.o     ft_strcat.o  \
             ft_strcpy.o     ft_striter.o    ft_strlen.o     ft_strncmp.o    ft_strnstr.o    ft_strsub.o     ft_bzero.o   \
@@ -18,7 +18,7 @@ OBJECTS	=   ft_atoi.o       ft_isascii.o    ft_memalloc.o   ft_memcpy.o     ft_p
             ft_memset.o     ft_putendl_fd.o ft_putstr_fd.o  ft_strcmp.o     ft_strequ.o     ft_strlcat.o    ft_strncat.o \
             ft_strnew.o     ft_strstr.o     ft_toupper.o    ft_lstdelone.o  ft_lstnew.o     ft_lstdel.o		ft_lstadd.o  \
 			ft_lstiter.o    ft_lstmap.o   	get_next_line.o	ft_max.o		ft_putupstr.o	ft_putnstr.o	ft_pow.o	 \
-			ft_strcatspace.o                ft_die.o        ft_intmalloc.o                                               \
+			ft_strcatspace.o                ft_die.o        ft_intmalloc.o  ft_free_ar.o                                 \
 
 HEADER = libft.h
 FLAGS = -Wall -Werror -Wextra
