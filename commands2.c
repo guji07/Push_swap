@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   commands2.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tgarkbit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/15 18:09:26 by tgarkbit          #+#    #+#             */
+/*   Updated: 2019/11/15 18:09:53 by tgarkbit         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 void	ft_rb(t_stack *a, int flag)
 {
-	int 	c;
+	int		c;
 
 	if (flag)
 		write(1, "rb\n", 3);
@@ -23,7 +35,7 @@ void	ft_rr(t_stack *a, t_stack *b, int flag)
 
 void	ft_rra(t_stack *a, int flag)
 {
-	int 	c;
+	int		c;
 
 	if (flag)
 		write(1, "rra\n", 4);
@@ -34,7 +46,7 @@ void	ft_rra(t_stack *a, int flag)
 
 void	ft_rrb(t_stack *a, int flag)
 {
-	int 	c;
+	int		c;
 
 	if (flag)
 		write(1, "rrb\n", 4);

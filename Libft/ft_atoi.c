@@ -6,7 +6,7 @@
 /*   By: tgarkbit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/08 16:00:51 by tgarkbit          #+#    #+#             */
-/*   Updated: 2019/09/11 10:52:40 by tgarkbit         ###   ########.fr       */
+/*   Updated: 2019/11/15 16:45:58 by tgarkbit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int					ft_atoi(const char *str)
 {
 	int						z;
-	signed long long int				sum;
+	long long int				sum;
 
 	z = 1;
 	sum = 0;
@@ -33,9 +33,9 @@ int					ft_atoi(const char *str)
 			ft_die("Error\n");
 		if (sum < 0 && z == 1)
 			ft_die("Error\n");
+		if (sum > (z ? INT_MAX : 2147483648))
+			ft_die("Error\n");
 		str++;
 	}
-	if (sum > INT_MAX || sum < INT_MIN)
-		ft_die("Error\n");
 	return (int)(z * sum);
 }

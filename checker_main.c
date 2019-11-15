@@ -115,11 +115,19 @@ void	ft_checkinstructions(t_stack *a)
 void	ft_valid(char *str)
 {
 	int 	i;
+	int 	flag;
 
+	flag = 0;
 	i = -1;
 	while (str[++i])
-		if ((str[i] != ' ' && !(str[i] >= '0' && str[i] <= '9')))
+	{
+		if ((str[i] != ' ' && !(str[i] >= '0' && str[i] <= '9') && str[i] != '-'))
 			ft_die("Error\n");
+		if (str[i] >= '0' && str[i] <= '9')
+			flag = 1;
+	}
+	if (flag == 0)
+		ft_die("Error\n");
 }
 
 void	ft_get_args(int num, char **args)

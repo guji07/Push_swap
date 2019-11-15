@@ -292,13 +292,14 @@ static	void	ft_get_args(int num, char **args)
 	i = 0;
 	if ((str = ft_memalloc(len + 1)))
 		while (++i < num)
-			ft_strcatspace(str, args[i]);//загоняем все аргументы в одну строку
+			ft_strcatspace(str, args[i]);
 	else
 	{
 		write(1, "Error\n", 6);
 		return ;
 	}
-	arr = ft_strsplit(str, ' ');//теперь каждую цифру в отдельный массив
+	arr = ft_strsplit(str, ' ');
+	ft_valid(str);
 	free(str);
 	i = 0;
 	while (arr[i])
@@ -306,7 +307,7 @@ static	void	ft_get_args(int num, char **args)
 	a.array = ft_intmalloc(i);
 	i = -1;
 	while (arr[++i])
-		a.array[i] = ft_atoi(arr[i]);//создаем стек А из аргументов
+		a.array[i] = ft_atoi(arr[i]);
 	ft_free_ar(i, arr);
 	a.size = i;
 	try_solve(&a);
