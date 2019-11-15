@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+#include <limits.h>
 int					ft_atoi(const char *str)
 {
 	int						z;
@@ -30,10 +30,12 @@ int					ft_atoi(const char *str)
 	{
 		sum = (sum * 10) + (*str - '0');
 		if (sum < 0 && z < 0)
-			return (0);
+			ft_die("Error\n");
 		if (sum < 0 && z == 1)
-			return (-1);
+			ft_die("Error\n");
 		str++;
 	}
+	if (sum > INT_MAX || sum < INT_MIN)
+		ft_die("Error\n");
 	return (int)(z * sum);
 }

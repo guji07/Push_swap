@@ -122,6 +122,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/tgarkbit/Desktop/push_swap/Libft/ft_atoi.c">
+			<Option target="checker"/>
+		</Unit>
 		<Unit filename="/Users/tgarkbit/Desktop/push_swap/Libft/ft_free_ar.c">
 			<Option target="pushswap"/>
 		</Unit>
@@ -137,6 +140,10 @@
 			<Option target="pushswap"/>
 		</Unit>
 		<Unit filename="/Users/tgarkbit/Desktop/push_swap/commands2.c">
+			<Option target="checker"/>
+			<Option target="pushswap"/>
+		</Unit>
+		<Unit filename="/Users/tgarkbit/Desktop/push_swap/commands3.c">
 			<Option target="checker"/>
 			<Option target="pushswap"/>
 		</Unit>

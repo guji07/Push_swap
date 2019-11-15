@@ -30,27 +30,27 @@ int 	ft_checkcmd(char *str)//проверка команды
 void	ft_makeinstructions(t_stack *a, t_stack *b, int cmd)
 {
 	if (cmd == 1)
-		ft_sa(a);
+		ft_sa(a, 0);
 	if (cmd == 2)
-		ft_sa(b);
+		ft_sa(b, 0);
 	if (cmd == 3)
-		ft_ss(a, b);
+		ft_ss(a, b, 0);
 	if (cmd == 4)
-		ft_pa(a, b);
+		ft_pa(a, b, 0);
 	if (cmd == 5)
-		ft_pb(a, b);
+		ft_pb(a, b, 0);
 	if (cmd == 6)
-		ft_ra(a);
+		ft_ra(a, 0);
 	if (cmd == 7)
-		ft_ra(b);
+		ft_ra(b, 0);
 	if (cmd == 8)
-		ft_rr(a, b);
+		ft_rr(a, b, 0);
 	if (cmd == 9)
-		ft_rra(a);
+		ft_rra(a, 0);
 	if (cmd == 10)
-		ft_rra(b);
+		ft_rra(b, 0);
 	if (cmd == 11)
-		ft_rrr(a, b);
+		ft_rrr(a, b, 0);
 }
 
 void	ft_sorted(t_stack *a, int c)
@@ -69,28 +69,57 @@ void	ft_sorted(t_stack *a, int c)
 	ft_die("OK\n");
 }
 
-void	ft_checkinstructions(t_stack *a, int len)
+void	ft_check_int(int a[], int size)
+{
+	int 	i;
+	int 	j;
+
+	i = 0;
+	while (i < size - 1)
+	{
+		j = i + 1;
+		while (j < size)
+		{
+			if (a[i] == a[j])
+				ft_die("Error\n");
+			j++;
+		}
+		i++;
+	}
+}
+
+void	ft_checkinstructions(t_stack *a)
 {
 	char	*str;
 	int		cmd;
 	t_stack b;
 
-	b.array = ft_intmalloc(len);//создаем пустой стек Б
+	ft_check_int(a->array, a->size);
+	b.array = ft_intmalloc(a->size);//создаем пустой стек Б
 	b.size = 0;
-	for (int i = 0; i < 5; i++)
-		printf("%i: %i   %i\n", i, (*a).array[i], (b).array[i]);
 	while (get_next_line(0, &str))
 	{
 		cmd = ft_checkcmd(str);
 		if (!cmd)
 		{
-			write(1, "Error\n", 6);
-			exit(0);
+			ft_die("Error\n");
 		}
 		else
 			ft_makeinstructions(a, &b, cmd);//выполняем очередную команду
+		free(str);
 	}
 	ft_sorted(a, b.size);
+	free(b.array);
+}
+
+void	ft_valid(char *str)
+{
+	int 	i;
+
+	i = -1;
+	while (str[++i])
+		if ((str[i] != ' ' && !(str[i] >= '0' && str[i] <= '9')))
+			ft_die("Error\n");
 }
 
 void	ft_get_args(int num, char **args)
@@ -104,17 +133,16 @@ void	ft_get_args(int num, char **args)
 	len = 0;
 	i = 0;
 	while (++i != num)
-		len += ft_strlen(args[i]) + 1;
+		len += (int)ft_strlen(args[i]) + 1;
 	i = 0;
 	if ((str = ft_memalloc(len + 1)))
 		while (++i < num)
 			ft_strcatspace(str, args[i]);//загоняем все аргументы в одну строку
 	else
-	{
-		write(1, "Error\n", 6);
-		return ;
-	}
+		ft_die("Error\n");
+	ft_valid(str);
 	arr = ft_strsplit(str, ' ');//теперь каждую цифру в отдельный массив
+	free(str);
 	i = 0;
 	while (arr[i])
 		i++;
@@ -122,14 +150,16 @@ void	ft_get_args(int num, char **args)
 	i = -1;
 	while (arr[++i])
 		a.array[i] = ft_atoi(arr[i]);//создаем стек А из аргументов
+	ft_free_ar(i, arr);
 	a.size = i;
-	ft_checkinstructions(&a, len);//функция приема инструкций
+	ft_checkinstructions(&a);//функция приема инструкций
+	free(a.array);
 }
 
 int		main(int num, char **args)
 {
-	/*printf("stack a: stack b:\n");*/
-	if (num != 1)
+	if (num > 1)
 		ft_get_args(num, args);
-	return (0);
+	if (num == 1)
+		return (0);
 }

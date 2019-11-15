@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/tgarkbit/Desktop/push_swap/Libft/ft_atoi.c
+libft.h
+/Users/tgarkbit/Desktop/push_swap/Libft/libft.h
+limits.h
+-
+
+/Users/tgarkbit/Desktop/push_swap/Libft/libft.h
+stdlib.h
+-
+unistd.h
+-
+

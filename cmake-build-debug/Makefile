@@ -136,6 +136,33 @@ pushswap/fast:
 	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/build
 .PHONY : pushswap/fast
 
+Libft/ft_atoi.o: Libft/ft_atoi.c.o
+
+.PHONY : Libft/ft_atoi.o
+
+# target to build an object file
+Libft/ft_atoi.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/Libft/ft_atoi.c.o
+.PHONY : Libft/ft_atoi.c.o
+
+Libft/ft_atoi.i: Libft/ft_atoi.c.i
+
+.PHONY : Libft/ft_atoi.i
+
+# target to preprocess a source file
+Libft/ft_atoi.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/Libft/ft_atoi.c.i
+.PHONY : Libft/ft_atoi.c.i
+
+Libft/ft_atoi.s: Libft/ft_atoi.c.s
+
+.PHONY : Libft/ft_atoi.s
+
+# target to generate assembly for a file
+Libft/ft_atoi.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/Libft/ft_atoi.c.s
+.PHONY : Libft/ft_atoi.c.s
+
 Libft/ft_free_ar.o: Libft/ft_free_ar.c.o
 
 .PHONY : Libft/ft_free_ar.o
@@ -250,6 +277,36 @@ commands2.c.s:
 	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/commands2.c.s
 .PHONY : commands2.c.s
 
+commands3.o: commands3.c.o
+
+.PHONY : commands3.o
+
+# target to build an object file
+commands3.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/commands3.c.o
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/commands3.c.o
+.PHONY : commands3.c.o
+
+commands3.i: commands3.c.i
+
+.PHONY : commands3.i
+
+# target to preprocess a source file
+commands3.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/commands3.c.i
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/commands3.c.i
+.PHONY : commands3.c.i
+
+commands3.s: commands3.c.s
+
+.PHONY : commands3.s
+
+# target to generate assembly for a file
+commands3.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/commands3.c.s
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/commands3.c.s
+.PHONY : commands3.c.s
+
 push_swap_main.o: push_swap_main.c.o
 
 .PHONY : push_swap_main.o
@@ -287,6 +344,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... checker"
 	@echo "... pushswap"
+	@echo "... Libft/ft_atoi.o"
+	@echo "... Libft/ft_atoi.i"
+	@echo "... Libft/ft_atoi.s"
 	@echo "... Libft/ft_free_ar.o"
 	@echo "... Libft/ft_free_ar.i"
 	@echo "... Libft/ft_free_ar.s"
@@ -299,6 +359,9 @@ help:
 	@echo "... commands2.o"
 	@echo "... commands2.i"
 	@echo "... commands2.s"
+	@echo "... commands3.o"
+	@echo "... commands3.i"
+	@echo "... commands3.s"
 	@echo "... push_swap_main.o"
 	@echo "... push_swap_main.i"
 	@echo "... push_swap_main.s"

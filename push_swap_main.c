@@ -14,7 +14,7 @@ int				ft_bot(t_stack *a)
 	if (a->array[0] > a->array[1] && a->array[0] < a->array[2])
 		return (a->array[0]);
 	if ((a->array[1] > a->array[0] && a->array[1] < a->array[2]) ||
-	(a->array[1] < a->array[0] && a->array[1] > a->array[2]))
+		(a->array[1] < a->array[0] && a->array[1] > a->array[2]))
 		return (a->array[1]);
 	return (a->array[2]);
 }
@@ -25,8 +25,8 @@ int				ft_maximum(t_stack *a)
 		return (a->array[0]);
 	if (a->array[1] > a->array[0] && a->array[1] > a->array[2])
 		return (a->array[1]);
-	return (a->array[2]);	
-}	
+	return (a->array[2]);
+}
 
 void			ft_three(t_stack *a)
 {
@@ -38,15 +38,21 @@ void			ft_three(t_stack *a)
 	bot = ft_bot(a);
 	max = ft_maximum(a);
 	if (a->array[0] == bot && a->array[1] == min)
-		write(1, "sa\n", 3);
+		ft_sa(a, 1);
 	if (a->array[0] == max && a->array[1] == bot)
-		write(1, "sa\nrra\n", 7);
+	{
+		ft_sa(a, 1);
+		ft_rra(a, 1);
+	}
 	if (a->array[0] == max && a->array[1] == min)
-		write(1, "ra\n", 3);	
+		ft_ra(a, 1);
 	if (a->array[0] == min && a->array[1] == max)
-		write(1, "sa\nra\n", 6);
+	{
+		ft_sa(a, 1);
+		ft_ra(a, 1);
+	}
 	if (a->array[0] == bot && a->array[1] == max)
-		write(1, "rra\n", 4);
+		ft_rra(a, 1);
 }
 
 void			ft_malo(t_stack *a)
@@ -114,21 +120,14 @@ void			ft_firstdo(t_stack *a, t_stack *b)
 	while (i++ < len)
 	{
 		if (a->array[0] < mid && a->array[0] != min && a->array[0] != max)
-		{
-			ft_pb(a, b);
-			write(1, "pb\n", 3);
-		}
+			ft_pb(a, b, 1);
 		else if (a->array[0] != min && a->array[0] != max)
 		{
-			ft_pb(a, b);
-			write(1, "pb\nrb\n", 6);
-			ft_ra(b);
+			ft_pb(a, b, 1);
+			ft_rb(b, 1);
 		}
 		else
-		{
-			ft_ra(a);
-			write(1, "ra\n", 3);
-		}
+			ft_ra(a, 1);
 	}
 }
 
@@ -158,27 +157,22 @@ void			ft_insert(t_stack *a, t_stack *b, int ra, int rb)
 {
 	while (ra > 0 && rb > 0)
 	{
-		ft_rr(a, b);
+		ft_rr(a, b, 1);
 		ra--;
 		rb--;
-		write(1, "rr\n", 3);
 	}
 	while (ra > 0)
 	{
-		ft_ra(a);
+		ft_ra(a, 1);
 		ra--;
-		write(1, "ra\n", 3);
 	}
 	while (rb > 0)
 	{
-		ft_ra(b);
+		ft_rb(b, 1);
 		rb--;
-		write(1, "rb\n", 3);
 	}
-	ft_pa(a, b);
-	write(1, "pa\n", 3);
-	ft_rra(a);
-	write(1, "rra\n", 4);
+	ft_pa(a, b, 1);
+	ft_rra(a, 1);
 }
 
 int				ft_whilenot(t_stack *a)
@@ -196,18 +190,15 @@ void			ft_low_insert(t_stack *a, t_stack *b, int ra, int rb)
 {
 	while (ra < (int)a->size)
 	{
-		ft_rra(a);
+		ft_rra(a, 1);
 		ra++;
-		write(1, "rra\n", 4);
 	}
 	while (rb > 0)
 	{
-		ft_ra(b);
+		ft_rb(b, 1);
 		rb--;
-		write(1, "rb\n", 3);
 	}
-	ft_pa(a, b);
-	write(1, "pa\n", 3);
+	ft_pa(a, b, 1);
 }
 
 void			ft_sort(t_stack *a, t_stack *b)
@@ -245,31 +236,45 @@ void			ft_sort(t_stack *a, t_stack *b)
 	while (!ft_whilenot(a))
 	{
 		if (ft_find_value(a, ft_minimum(a)) < (int)a->size / 2)
-		{
-			ft_ra(a);
-			write(1, "ra\n", 3);
-		}
+			ft_ra(a, 1);
 		else
-		{
-			ft_rra(a);
-			write(1, "rra\n", 4);
-		}
+			ft_rra(a, 1);
 	}
 }
 
 void			try_solve(t_stack *a)
 {
-	t_stack b;
+	t_stack		b;
 
+	if (ft_whilenot(a))
+		exit (0);
+	b.array = NULL;
 	if (a->size < 3)
 		ft_malo(a);
 	else if (a->size == 3)
 		ft_three(a);
+	else if (a->size == 5)
+	{
+		b.array = ft_intmalloc(2);
+		b.size = 0;
+		while (a->size != 3)
+		{
+			if (a->array[0] != ft_minimum(a))
+				ft_ra(a, 1);
+			else
+				ft_pb(a, &b, 1);
+		}
+		ft_three(a);
+		ft_pa(a, &b, 1);
+		ft_pa(a, &b, 1);
+	}
 	else
 	{
 		ft_firstdo(a, &b);
 		ft_sort(a, &b);
 	}
+	if (b.array)
+		free(b.array);
 }
 
 static	void	ft_get_args(int num, char **args)
@@ -305,6 +310,7 @@ static	void	ft_get_args(int num, char **args)
 	ft_free_ar(i, arr);
 	a.size = i;
 	try_solve(&a);
+	free(a.array);
 }
 
 int 	main(int num, char **args)
