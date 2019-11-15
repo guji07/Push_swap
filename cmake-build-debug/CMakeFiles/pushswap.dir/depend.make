@@ -12,6 +12,10 @@ CMakeFiles/pushswap.dir/commands2.c.o: ../Libft/libft.h
 CMakeFiles/pushswap.dir/commands2.c.o: ../commands2.c
 CMakeFiles/pushswap.dir/commands2.c.o: ../push_swap.h
 
+CMakeFiles/pushswap.dir/commands3.c.o: ../Libft/libft.h
+CMakeFiles/pushswap.dir/commands3.c.o: ../commands3.c
+CMakeFiles/pushswap.dir/commands3.c.o: ../push_swap.h
+
 CMakeFiles/pushswap.dir/push_swap_main.c.o: ../Libft/libft.h
 CMakeFiles/pushswap.dir/push_swap_main.c.o: ../push_swap.h
 CMakeFiles/pushswap.dir/push_swap_main.c.o: ../push_swap_main.c

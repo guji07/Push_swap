@@ -4,40 +4,44 @@ void	ft_sa(t_stack *a, int flag)
 {
 	int		c;
 
+	if (flag)
+		write(1, "sa\n", 3);
 	if ((*a).size > 1)
 	{
 		c = (*a).array[0];
 		(*a).array[0] = (*a).array[1];
 		(*a).array[1] = c;
 	}
-	if (flag)
-		write(1, "sa\n", 3);
 }
 
 void	ft_sb(t_stack *a, int flag)
 {
 	int		c;
 
+	if (flag)
+		write(1, "sb\n", 3);
 	if ((*a).size > 1)
 	{
 		c = (*a).array[0];
 		(*a).array[0] = (*a).array[1];
 		(*a).array[1] = c;
 	}
-	if (flag)
-		write(1, "sb\n", 3);
 }
 
 void	ft_ss(t_stack *a, t_stack *b, int flag)
 {
-	ft_sa(a, flag);
-	ft_sb(b, flag);
+	ft_sa(a, 0);
+	ft_sb(b, 0);
+	if (flag)
+		write(1, "ss\n", 3);
 }
 
 void	ft_pa(t_stack *a, t_stack *b, int flag)
 {
 	int		c;
 
+	if (flag)
+		write(1, "pa\n", 3);
 	if ((*b).size > 0)
 	{
 		c = (*b).array[0];
@@ -48,14 +52,14 @@ void	ft_pa(t_stack *a, t_stack *b, int flag)
 		(*b).array[(*b).size - 1] = 0;
 		(*b).size--;
 	}
-	if (flag)
-		write(1, "pa\n", 3);
 }
 
 void	ft_pb(t_stack *a, t_stack *b, int flag)
 {
 	int		c;
 
+	if (flag)
+		write(1, "pb\n", 3);
 	if ((*a).size > 0)
 	{
 		c = (*a).array[0];
@@ -66,6 +70,4 @@ void	ft_pb(t_stack *a, t_stack *b, int flag)
 		(*a).array[(*a).size - 1] = 0;
 		(*a).size--;
 	}
-	if (flag)
-		write(1, "pb\n", 3);
 }
