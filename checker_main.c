@@ -1,31 +1,16 @@
-#include "push_swap.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   checker_main.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tgarkbit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/15 19:40:35 by tgarkbit          #+#    #+#             */
+/*   Updated: 2019/11/20 09:22:03 by tgarkbit         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int 	ft_checkcmd(char *str)//проверка команды
-{
-	if (ft_strequ(str, "sa"))
-		return (1);
-	if (ft_strequ(str, "sb"))
-		return (2);
-	if (ft_strequ(str, "ss"))
-		return (3);
-	if (ft_strequ(str, "pa"))
-		return (4);
-	if (ft_strequ(str, "pb"))
-		return (5);
-	if (ft_strequ(str, "ra"))
-		return (6);
-	if (ft_strequ(str, "rb"))
-		return (7);
-	if (ft_strequ(str, "rr"))
-		return (8);
-	if (ft_strequ(str, "rra"))
-		return (9);
-	if (ft_strequ(str, "rrb"))
-		return (10);
-	if (ft_strequ(str, "rrr"))
-		return (11);
-	return (0);
-}
+#include "push_swap.h"
 
 void	ft_makeinstructions(t_stack *a, t_stack *b, int cmd)
 {
@@ -53,84 +38,50 @@ void	ft_makeinstructions(t_stack *a, t_stack *b, int cmd)
 		ft_rrr(a, b, 0);
 }
 
-void	ft_sorted(t_stack *a, int c)
-{
-	int 	i;
-
-	i = -1;
-	if (c != 0)
-		ft_die("KO\n");
-	while (++i < (int)(a->size - 1))
-		if (a->array[i] > a->array[i + 1])
-		{
-			free(a->array);
-			ft_die("KO\n");
-		}
-	ft_die("OK\n");
-}
-
-void	ft_check_int(int a[], int size)
-{
-	int 	i;
-	int 	j;
-
-	i = 0;
-	while (i < size - 1)
-	{
-		j = i + 1;
-		while (j < size)
-		{
-			if (a[i] == a[j])
-				ft_die("Error\n");
-			j++;
-		}
-		i++;
-	}
-}
-
-void	ft_checkinstructions(t_stack *a)
+void	ft_checkinstructions(t_stack *a, int flag)
 {
 	char	*str;
 	int		cmd;
-	t_stack b;
+	t_stack	b;
+	int		size;
 
 	ft_check_int(a->array, a->size);
-	b.array = ft_intmalloc(a->size);//создаем пустой стек Б
+	b.array = ft_intmalloc(a->size);
 	b.size = 0;
+	size = a->size;
 	while (get_next_line(0, &str))
 	{
 		cmd = ft_checkcmd(str);
 		if (!cmd)
-		{
 			ft_die("Error\n");
-		}
 		else
-			ft_makeinstructions(a, &b, cmd);//выполняем очередную команду
+			ft_makeinstructions(a, &b, cmd);
 		free(str);
+		if (flag == 1)
+			ft_stackprint(a, &b, size);
 	}
 	ft_sorted(a, b.size);
 	free(b.array);
 }
 
-void	ft_valid(char *str)
+void	ft_costyl3(char ***arr, t_stack *a, int flag)
 {
-	int 	i;
-	int 	flag;
+	int		i;
 
-	flag = 0;
+	i = 0;
+	while (((*arr))[i])
+		i++;
+	a->array = ft_intmalloc(i);
 	i = -1;
-	while (str[++i])
-	{
-		if ((str[i] != ' ' && !(str[i] >= '0' && str[i] <= '9') && str[i] != '-'))
-			ft_die("Error\n");
-		if (str[i] >= '0' && str[i] <= '9')
-			flag = 1;
-	}
-	if (flag == 0)
-		ft_die("Error\n");
+	while ((*arr)[++i])
+		a->array[i] = ft_atoidie(((*arr))[i]);
+	ft_free_ar(i, *arr);
+	a->size = i;
+	ft_checkinstructions(a, flag);
+	free(a->array);
 }
 
-void	ft_get_args(int num, char **args)
+void	ft_get_args(int num, char **args, int flag)
 {
 	char		*str;
 	int			len;
@@ -145,29 +96,24 @@ void	ft_get_args(int num, char **args)
 	i = 0;
 	if ((str = ft_memalloc(len + 1)))
 		while (++i < num)
-			ft_strcatspace(str, args[i]);//загоняем все аргументы в одну строку
+			ft_strcatspace(str, args[i]);
 	else
 		ft_die("Error\n");
 	ft_valid(str);
-	arr = ft_strsplit(str, ' ');//теперь каждую цифру в отдельный массив
+	arr = ft_strsplit(str, ' ');
 	free(str);
-	i = 0;
-	while (arr[i])
-		i++;
-	a.array = ft_intmalloc(i);
-	i = -1;
-	while (arr[++i])
-		a.array[i] = ft_atoi(arr[i]);//создаем стек А из аргументов
-	ft_free_ar(i, arr);
-	a.size = i;
-	ft_checkinstructions(&a);//функция приема инструкций
-	free(a.array);
+	ft_costyl3(&arr, &a, flag);
 }
 
 int		main(int num, char **args)
 {
 	if (num > 1)
-		ft_get_args(num, args);
+	{
+		if (ft_strequ("-v", args[1]))
+			ft_get_args(num - 1, args + 1, 1);
+		else
+			ft_get_args(num, args, 0);
+	}
 	if (num == 1)
 		return (0);
 }

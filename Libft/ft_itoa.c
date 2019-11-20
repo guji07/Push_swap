@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static		int	ft_intlen(int n)
+static		int	ft_intlenn(int n)
 {
 	int		i;
 
@@ -63,7 +63,7 @@ char			*ft_itoa(int n)
 {
 	char *str;
 
-	if ((str = (char*)malloc(ft_intlen(n) + 1)))
+	if ((str = (char*)malloc(ft_intlenn(n) + 1)))
 	{
 		if (n == -2147483648)
 			ft_strcpy(str, "-2147483648");

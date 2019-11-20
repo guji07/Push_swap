@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgarkbit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/01 14:08:47 by tgarkbit          #+#    #+#             */
-/*   Updated: 2019/11/01 14:45:42 by tgarkbit         ###   ########.fr       */
+/*   Created: 2019/11/01 22:20:05 by tgarkbit          #+#    #+#             */
+/*   Updated: 2019/11/01 22:20:19 by tgarkbit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int				ft_max(int a, int b)
+int			ft_max(int a, int b)
 {
 	if (a > b)
 		return (a);

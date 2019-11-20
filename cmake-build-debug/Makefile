@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/tgarkbit/Desktop/push_swap
+CMAKE_SOURCE_DIR = /Users/tgarkbit/tgarkbit2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/tgarkbit/Desktop/push_swap/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/tgarkbit/tgarkbit2/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tgarkbit/Desktop/push_swap/cmake-build-debug/CMakeFiles /Users/tgarkbit/Desktop/push_swap/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tgarkbit/tgarkbit2/cmake-build-debug/CMakeFiles /Users/tgarkbit/tgarkbit2/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tgarkbit/Desktop/push_swap/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tgarkbit/tgarkbit2/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -136,32 +136,32 @@ pushswap/fast:
 	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/build
 .PHONY : pushswap/fast
 
-Libft/ft_atoi.o: Libft/ft_atoi.c.o
+Libft/ft_atoidie.o: Libft/ft_atoidie.c.o
 
-.PHONY : Libft/ft_atoi.o
+.PHONY : Libft/ft_atoidie.o
 
 # target to build an object file
-Libft/ft_atoi.c.o:
-	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/Libft/ft_atoi.c.o
-.PHONY : Libft/ft_atoi.c.o
+Libft/ft_atoidie.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/Libft/ft_atoidie.c.o
+.PHONY : Libft/ft_atoidie.c.o
 
-Libft/ft_atoi.i: Libft/ft_atoi.c.i
+Libft/ft_atoidie.i: Libft/ft_atoidie.c.i
 
-.PHONY : Libft/ft_atoi.i
+.PHONY : Libft/ft_atoidie.i
 
 # target to preprocess a source file
-Libft/ft_atoi.c.i:
-	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/Libft/ft_atoi.c.i
-.PHONY : Libft/ft_atoi.c.i
+Libft/ft_atoidie.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/Libft/ft_atoidie.c.i
+.PHONY : Libft/ft_atoidie.c.i
 
-Libft/ft_atoi.s: Libft/ft_atoi.c.s
+Libft/ft_atoidie.s: Libft/ft_atoidie.c.s
 
-.PHONY : Libft/ft_atoi.s
+.PHONY : Libft/ft_atoidie.s
 
 # target to generate assembly for a file
-Libft/ft_atoi.c.s:
-	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/Libft/ft_atoi.c.s
-.PHONY : Libft/ft_atoi.c.s
+Libft/ft_atoidie.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/Libft/ft_atoidie.c.s
+.PHONY : Libft/ft_atoidie.c.s
 
 Libft/ft_free_ar.o: Libft/ft_free_ar.c.o
 
@@ -307,6 +307,144 @@ commands3.c.s:
 	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/commands3.c.s
 .PHONY : commands3.c.s
 
+commands4.o: commands4.c.o
+
+.PHONY : commands4.o
+
+# target to build an object file
+commands4.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/commands4.c.o
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/commands4.c.o
+.PHONY : commands4.c.o
+
+commands4.i: commands4.c.i
+
+.PHONY : commands4.i
+
+# target to preprocess a source file
+commands4.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/commands4.c.i
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/commands4.c.i
+.PHONY : commands4.c.i
+
+commands4.s: commands4.c.s
+
+.PHONY : commands4.s
+
+# target to generate assembly for a file
+commands4.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/commands4.c.s
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/commands4.c.s
+.PHONY : commands4.c.s
+
+push_Swap5.o: push_Swap5.c.o
+
+.PHONY : push_Swap5.o
+
+# target to build an object file
+push_Swap5.c.o:
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/push_Swap5.c.o
+.PHONY : push_Swap5.c.o
+
+push_Swap5.i: push_Swap5.c.i
+
+.PHONY : push_Swap5.i
+
+# target to preprocess a source file
+push_Swap5.c.i:
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/push_Swap5.c.i
+.PHONY : push_Swap5.c.i
+
+push_Swap5.s: push_Swap5.c.s
+
+.PHONY : push_Swap5.s
+
+# target to generate assembly for a file
+push_Swap5.c.s:
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/push_Swap5.c.s
+.PHONY : push_Swap5.c.s
+
+push_swap2.o: push_swap2.c.o
+
+.PHONY : push_swap2.o
+
+# target to build an object file
+push_swap2.c.o:
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/push_swap2.c.o
+.PHONY : push_swap2.c.o
+
+push_swap2.i: push_swap2.c.i
+
+.PHONY : push_swap2.i
+
+# target to preprocess a source file
+push_swap2.c.i:
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/push_swap2.c.i
+.PHONY : push_swap2.c.i
+
+push_swap2.s: push_swap2.c.s
+
+.PHONY : push_swap2.s
+
+# target to generate assembly for a file
+push_swap2.c.s:
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/push_swap2.c.s
+.PHONY : push_swap2.c.s
+
+push_swap3.o: push_swap3.c.o
+
+.PHONY : push_swap3.o
+
+# target to build an object file
+push_swap3.c.o:
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/push_swap3.c.o
+.PHONY : push_swap3.c.o
+
+push_swap3.i: push_swap3.c.i
+
+.PHONY : push_swap3.i
+
+# target to preprocess a source file
+push_swap3.c.i:
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/push_swap3.c.i
+.PHONY : push_swap3.c.i
+
+push_swap3.s: push_swap3.c.s
+
+.PHONY : push_swap3.s
+
+# target to generate assembly for a file
+push_swap3.c.s:
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/push_swap3.c.s
+.PHONY : push_swap3.c.s
+
+push_swap4.o: push_swap4.c.o
+
+.PHONY : push_swap4.o
+
+# target to build an object file
+push_swap4.c.o:
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/push_swap4.c.o
+.PHONY : push_swap4.c.o
+
+push_swap4.i: push_swap4.c.i
+
+.PHONY : push_swap4.i
+
+# target to preprocess a source file
+push_swap4.c.i:
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/push_swap4.c.i
+.PHONY : push_swap4.c.i
+
+push_swap4.s: push_swap4.c.s
+
+.PHONY : push_swap4.s
+
+# target to generate assembly for a file
+push_swap4.c.s:
+	$(MAKE) -f CMakeFiles/pushswap.dir/build.make CMakeFiles/pushswap.dir/push_swap4.c.s
+.PHONY : push_swap4.c.s
+
 push_swap_main.o: push_swap_main.c.o
 
 .PHONY : push_swap_main.o
@@ -344,9 +482,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... checker"
 	@echo "... pushswap"
-	@echo "... Libft/ft_atoi.o"
-	@echo "... Libft/ft_atoi.i"
-	@echo "... Libft/ft_atoi.s"
+	@echo "... Libft/ft_atoidie.o"
+	@echo "... Libft/ft_atoidie.i"
+	@echo "... Libft/ft_atoidie.s"
 	@echo "... Libft/ft_free_ar.o"
 	@echo "... Libft/ft_free_ar.i"
 	@echo "... Libft/ft_free_ar.s"
@@ -362,6 +500,21 @@ help:
 	@echo "... commands3.o"
 	@echo "... commands3.i"
 	@echo "... commands3.s"
+	@echo "... commands4.o"
+	@echo "... commands4.i"
+	@echo "... commands4.s"
+	@echo "... push_Swap5.o"
+	@echo "... push_Swap5.i"
+	@echo "... push_Swap5.s"
+	@echo "... push_swap2.o"
+	@echo "... push_swap2.i"
+	@echo "... push_swap2.s"
+	@echo "... push_swap3.o"
+	@echo "... push_swap3.i"
+	@echo "... push_swap3.s"
+	@echo "... push_swap4.o"
+	@echo "... push_swap4.i"
+	@echo "... push_swap4.s"
 	@echo "... push_swap_main.o"
 	@echo "... push_swap_main.i"
 	@echo "... push_swap_main.s"

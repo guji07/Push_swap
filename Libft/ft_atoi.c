@@ -6,16 +6,16 @@
 /*   By: tgarkbit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/08 16:00:51 by tgarkbit          #+#    #+#             */
-/*   Updated: 2019/11/15 16:45:58 by tgarkbit         ###   ########.fr       */
+/*   Updated: 2019/09/11 10:52:40 by tgarkbit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <limits.h>
+
 int					ft_atoi(const char *str)
 {
 	int						z;
-	long long int				sum;
+	signed long long int	sum;
 
 	z = 1;
 	sum = 0;
@@ -30,11 +30,9 @@ int					ft_atoi(const char *str)
 	{
 		sum = (sum * 10) + (*str - '0');
 		if (sum < 0 && z < 0)
-			ft_die("Error\n");
+			return (0);
 		if (sum < 0 && z == 1)
-			ft_die("Error\n");
-		if (sum > (z ? INT_MAX : 2147483648))
-			ft_die("Error\n");
+			return (-1);
 		str++;
 	}
 	return (int)(z * sum);

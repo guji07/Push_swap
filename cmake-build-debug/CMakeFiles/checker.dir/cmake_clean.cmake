@@ -3,7 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/checker.dir/commands1.c.o"
   "CMakeFiles/checker.dir/commands2.c.o"
   "CMakeFiles/checker.dir/commands3.c.o"
-  "CMakeFiles/checker.dir/Libft/ft_atoi.c.o"
+  "CMakeFiles/checker.dir/commands4.c.o"
+  "CMakeFiles/checker.dir/Libft/ft_atoidie.c.o"
   "checker.pdb"
   "checker"
 )
