@@ -21,7 +21,7 @@ void	ft_ra(t_stack *a, int flag)
 	if ((*a).size < 2)
 		return ;
 	c = (*a).array[0];
-	ft_memmove((*a).array, ((*a).array) + 1, sizeof(int) * (*a).size - 1);
+	ft_memmove((*a).array, ((*a).array) + 1, sizeof(int) * ((*a).size - 1));
 	(*a).array[(*a).size - 1] = c;
 }
 

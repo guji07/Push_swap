@@ -24,6 +24,7 @@
 # include <stdio.h>
 # include "push_swap.h"
 # include "Libft/libft.h"
+# include <string.h>
 
 typedef struct	s_stack {
 	int			*array;
