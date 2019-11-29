@@ -98,6 +98,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/push_swap3.c.o"
   "CMakeFiles/push_swap.dir/push_swap4.c.o"
   "CMakeFiles/push_swap.dir/push_swap5.c.o"
+  "CMakeFiles/push_swap.dir/cases.c.o"
   "CMakeFiles/push_swap.dir/push_swap_main.c.o"
   "push_swap.pdb"
   "push_swap"

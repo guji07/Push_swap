@@ -8,44 +8,44 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/tgarkbit/Desktop/check/cmake-build-debug"/>
+				<Option working_dir="/Users/tgarkbit/Desktop/FINAL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/tgarkbit/Desktop/check/cmake-build-debug"/>
+				<Option working_dir="/Users/tgarkbit/Desktop/FINAL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/tgarkbit/Desktop/check/cmake-build-debug"/>
+				<Option working_dir="/Users/tgarkbit/Desktop/FINAL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="push_swap">
-				<Option output="/Users/tgarkbit/Desktop/check/cmake-build-debug/push_swap" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tgarkbit/Desktop/check/cmake-build-debug"/>
+				<Option output="/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/push_swap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tgarkbit/Desktop/FINAL/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tgarkbit/Desktop/check/."/>
-					<Add directory="/Users/tgarkbit/Desktop/check/Libft"/>
+					<Add directory="/Users/tgarkbit/Desktop/FINAL/."/>
+					<Add directory="/Users/tgarkbit/Desktop/FINAL/Libft"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -54,21 +54,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="push_swap/fast">
-				<Option output="/Users/tgarkbit/Desktop/check/cmake-build-debug/push_swap" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tgarkbit/Desktop/check/cmake-build-debug"/>
+				<Option output="/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/push_swap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tgarkbit/Desktop/FINAL/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tgarkbit/Desktop/check/."/>
-					<Add directory="/Users/tgarkbit/Desktop/check/Libft"/>
+					<Add directory="/Users/tgarkbit/Desktop/FINAL/."/>
+					<Add directory="/Users/tgarkbit/Desktop/FINAL/Libft"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -77,21 +77,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="check">
-				<Option output="/Users/tgarkbit/Desktop/check/cmake-build-debug/check" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tgarkbit/Desktop/check/cmake-build-debug"/>
+				<Option output="/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/check" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tgarkbit/Desktop/FINAL/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tgarkbit/Desktop/check/."/>
-					<Add directory="/Users/tgarkbit/Desktop/check/Libft"/>
+					<Add directory="/Users/tgarkbit/Desktop/FINAL/."/>
+					<Add directory="/Users/tgarkbit/Desktop/FINAL/Libft"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -100,21 +100,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 check"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 check"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="check/fast">
-				<Option output="/Users/tgarkbit/Desktop/check/cmake-build-debug/check" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tgarkbit/Desktop/check/cmake-build-debug"/>
+				<Option output="/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/check" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tgarkbit/Desktop/FINAL/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tgarkbit/Desktop/check/."/>
-					<Add directory="/Users/tgarkbit/Desktop/check/Libft"/>
+					<Add directory="/Users/tgarkbit/Desktop/FINAL/."/>
+					<Add directory="/Users/tgarkbit/Desktop/FINAL/Libft"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -123,420 +123,423 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 check/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 check/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/flag_char.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/flag_char.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/flag_f1.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/flag_f1.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/flag_f2.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/flag_f2.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/flag_int.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/flag_int.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/flag_o.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/flag_o.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/flag_p.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/flag_p.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/flag_percent.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/flag_percent.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/flag_str.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/flag_str.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/flag_unsignedint.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/flag_unsignedint.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/flag_x1.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/flag_x1.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_atoi.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_atoi.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_atoidie.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_atoidie.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_bzero.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_bzero.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_die.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_die.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_flagx2.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_flagx2.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_free_ar.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_free_ar.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_intlen.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_intlen.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_intmalloc.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_intmalloc.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_isalnum.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_isalnum.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_isalpha.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_isalpha.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_isascii.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_isascii.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_isdigit.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_isdigit.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_isprint.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_isprint.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_itoa.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_itoa.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_itoabase.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_itoabase.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_lstadd.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_lstadd.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_lstdel.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_lstdel.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_lstdelone.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_lstdelone.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_lstiter.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_lstiter.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_lstmap.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_lstmap.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_lstnew.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_lstnew.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_max.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_max.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_memalloc.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_memalloc.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_memccpy.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_memccpy.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_memchr.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_memchr.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_memcmp.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_memcmp.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_memcpy.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_memcpy.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_memdel.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_memdel.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_memmove.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_memmove.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_memset.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_memset.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_pow.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_pow.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_printf.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_printf.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_putchar.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_putchar.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_putchar_fd.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_putchar_fd.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_putendl.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_putendl.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_putendl_fd.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_putendl_fd.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_putnbr.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_putnbr.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_putnbr_fd.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_putnbr_fd.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_putnbrpos.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_putnbrpos.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_putnstr.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_putnstr.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_putstr.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_putstr.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_putstr_fd.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_putstr_fd.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_putunsignednbr.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_putunsignednbr.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_putupstr.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_putupstr.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_reverse.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_reverse.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strcat.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strcat.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strcatspace.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strcatspace.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strchr.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strchr.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strclr.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strclr.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strcmp.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strcmp.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strcpy.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strcpy.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strdel.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strdel.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strdup.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strdup.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strequ.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strequ.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_striter.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_striter.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_striteri.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_striteri.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strjoin.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strjoin.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strjoinfree.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strjoinfree.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strlcat.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strlcat.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strlen.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strlen.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strmap.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strmap.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strmapi.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strmapi.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strncat.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strncat.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strncmp.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strncmp.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strncpy.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strncpy.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strnequ.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strnequ.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strnew.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strnew.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strnstr.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strnstr.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strrchr.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strrchr.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strsplit.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strsplit.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strstr.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strstr.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strsub.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strsub.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_strtrim.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_strtrim.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_swap.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_swap.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_swapint.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_swapint.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_tolower.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_tolower.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_toupper.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_toupper.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_unsignedintlen.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_unsignedintlen.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/ft_write.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/ft_write.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/get_next_line.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/get_next_line.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/libft.h">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/libft.h">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/Libft/parsers.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/Libft/parsers.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/checker_main.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/cases.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/checker_main.c">
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/commands1.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/commands1.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/commands2.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/commands2.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/commands3.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/commands3.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/commands4.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/commands4.c">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/push_swap.h">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/push_swap.h">
 			<Option target="push_swap"/>
 			<Option target="check"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/push_swap2.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/push_swap2.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/push_swap3.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/push_swap3.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/push_swap4.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/push_swap4.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/push_swap5.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/push_swap5.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/push_swap_main.c">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/push_swap_main.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/tgarkbit/Desktop/check/CMakeLists.txt">
+		<Unit filename="/Users/tgarkbit/Desktop/FINAL/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

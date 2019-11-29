@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/tgarkbit/Desktop/check
+CMAKE_SOURCE_DIR = /Users/tgarkbit/Desktop/FINAL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/tgarkbit/Desktop/check/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/tgarkbit/Desktop/FINAL/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tgarkbit/Desktop/check/cmake-build-debug/CMakeFiles /Users/tgarkbit/Desktop/check/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles /Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tgarkbit/Desktop/check/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -2866,6 +2866,33 @@ Libft/parsers.c.s:
 	$(MAKE) -f CMakeFiles/check.dir/build.make CMakeFiles/check.dir/Libft/parsers.c.s
 .PHONY : Libft/parsers.c.s
 
+cases.o: cases.c.o
+
+.PHONY : cases.o
+
+# target to build an object file
+cases.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/cases.c.o
+.PHONY : cases.c.o
+
+cases.i: cases.c.i
+
+.PHONY : cases.i
+
+# target to preprocess a source file
+cases.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/cases.c.i
+.PHONY : cases.c.i
+
+cases.s: cases.c.s
+
+.PHONY : cases.s
+
+# target to generate assembly for a file
+cases.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/cases.c.s
+.PHONY : cases.c.s
+
 checker_main.o: checker_main.c.o
 
 .PHONY : checker_main.o
@@ -3431,6 +3458,9 @@ help:
 	@echo "... Libft/parsers.o"
 	@echo "... Libft/parsers.i"
 	@echo "... Libft/parsers.s"
+	@echo "... cases.o"
+	@echo "... cases.i"
+	@echo "... cases.s"
 	@echo "... checker_main.o"
 	@echo "... checker_main.i"
 	@echo "... checker_main.s"

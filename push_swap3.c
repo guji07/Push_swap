@@ -51,51 +51,31 @@ int				ft_minimum(t_stack *a)
 	return (min);
 }
 
-void			ft_firstdo(t_stack *a, t_stack *b)
-{
-	int		mid;
-	int		min;
-	int		max;
-
-	b->array = ft_intmalloc(a->size);
-	b->size = 0;
-	mid = ft_sredarp(a);
-	min = ft_minimum(a);
-	max = ft_maximalnoe(a);
-	if (a->size < 100)
-	{
-		while (a->size != 3)
-		{
-			if (a->array[0] > mid && a->array[0] != min && a->array[0] != max)
-				ft_pb(a, b, 1);
-			else if (a->array[0] != min && a->array[0] != max)
-				ft_pb(a, b, 1);
-			else
-				ft_ra(a, 1);
-		}
-	}
-	else
-		while (a->size != 3)
-		{
-			if (a->array[0] != min && a->array[0] != max)
-			{
-				ft_pb(a, b, 1);
-				if (b->array[0] > mid)
-					ft_rb(b, 1);
-			}
-			else
-				ft_ra(a, 1);
-		}
-	ft_three(a);
-}
-
-int				ft_find_index(t_stack *a, int value)
+int				ft_whilenot(t_stack *a)
 {
 	int		i;
 
 	i = -1;
-	while (++i < (int)a->size)
-		if (a->array[i] < value && (i + 2 > (int)a->size || a->array[i + 1] > value))
-			return (i + 1);
-	return (-1);
+	while (++i < (int)(a->size - 1))
+		if (a->array[i] > a->array[i + 1])
+			return (0);
+	return (1);
+}
+
+void			ft_five(t_stack *a, t_stack *b)
+{
+	b->array = ft_intmalloc(2);
+	b->size = 0;
+	while (a->size != 3)
+	{
+		if (a->array[4] == ft_minimum(a))
+			ft_rra(a, 1);
+		if (a->array[0] != ft_minimum(a))
+			ft_ra(a, 1);
+		else
+			ft_pb(a, b, 1);
+	}
+	ft_three(a);
+	ft_pa(a, b, 1);
+	ft_pa(a, b, 1);
 }

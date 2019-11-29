@@ -51,209 +51,8 @@ static	void	ft_get_args(int num, char **args)
 	free(a.array);
 }
 
-t_oper			ft_oper(void)
+void			ft_dokryt(t_stack *a)
 {
-	t_oper		oper;
-
-	oper.ra = INT_MAX - 500;
-	oper.rb = INT_MAX - 500;
-	oper.rra = INT_MAX - 500;
-	oper.rrb = INT_MAX - 500;
-	oper.cas = 0;
-	return (oper);
-}
-
-int				ft_find_low_index(t_stack *a, int value)
-{
-	int		i;
-
-	i = (int)a->size - 1;
-	while (i >= 0)
-	{
-		if (a->array[i] > value && (i > 0) && a->array[i - 1] < value)
-			return ((int)a->size - i);
-		if (i == (int)a->size - 1)
-			if (a->array[a->size - 1] < value && a->array[0] > value)
-				return (0);
-		i--;
-	}
-	return (a->size);
-}
-
-int 			ft_minimalnoe(int a, int b)
-{
-	if (a < b)
-		return (a);
-	return (b);
-}
-
-int 			ft_oper_case(t_oper min)
-{
-	int 	min1;
-	int 	min2;
-	int 	min3;
-	int 	min4;
-
-	min1 = min.ra + min.rb - ft_minimalnoe(min.ra, min.rb);
-	min2 = min.ra + min.rrb;
-	min3 = min.rra + min.rb;
-	min4 = min.rra + min.rrb - ft_minimalnoe(min.rra, min.rrb);
-	if (min1 <= min2 && min1 <= min3 && min1 <= min4)
-		return (1);
-	if (min2 <= min1 && min2 <= min3 && min3 <= min4)
-		return (2);
-	if (min3 <= min1 && min3 <= min2 && min3 <= min4)
-		return (3);
-	return (4);
-}
-
-int				ft_cena(t_oper min)
-{
-	int 	min1;
-	int 	min2;
-	int 	min3;
-	int 	min4;
-
-	if ((min1 = min.ra + min.rb - ft_minimalnoe(min.ra, min.rb)) < 0)
-		min1 = INT_MAX;
-	if((min2 = min.ra + min.rrb) < 0)
-		min2 = INT_MAX;
-	if ((min3 = min.rra + min.rb) < 0)
-		min3 = INT_MAX;
-	if ((min4 = min.rra + min.rrb - ft_minimalnoe(min.rra, min.rrb)) < 0)
-		min4 = INT_MAX;
-	if (min1 <= min2 && min1 <= min3 && min1 <= min4)
-		return (min1);
-	if (min2 <= min1 && min2 <= min3 && min3 <= min4)
-		return (min2);
-	if (min3 <= min1 && min3 <= min2 && min3 <= min4)
-		return (min3);
-	return (min4);
-}
-
-void 			case1(t_stack *a, t_stack *b, t_oper oper)
-{
-	while (oper.ra && oper.rb)
-	{
-		oper.ra--;
-		oper.rb--;
-		ft_rr(a, b, 1);
-	}
-	while (oper.ra)
-	{
-		ft_ra(a, 1);
-		oper.ra--;
-	}
-	while (oper.rb)
-	{
-		ft_rb(b, 1);
-		oper.rb--;
-	}
-	ft_pa(a, b, 1);
-}
-
-void			case2(t_stack *a, t_stack *b, t_oper oper)
-{
-	while (oper.ra)
-	{
-		ft_ra(a, 1);
-		oper.ra--;
-	}
-	while (oper.rrb)
-	{
-		ft_rrb(b, 1);
-		oper.rrb--;
-	}
-	ft_pa(a, b, 1);
-}
-
-void			case3(t_stack *a, t_stack *b, t_oper oper)
-{
-	while (oper.rra)
-	{
-		oper.rra--;
-		ft_rra(a,1);
-	}
-	while (oper.rb)
-	{
-		oper.rb--;
-		ft_rb(b, 1);
-	}
-	ft_pa(a, b, 1);
-}
-
-void			case4(t_stack *a, t_stack *b, t_oper oper)
-{
-	while (oper.rra && oper.rrb)
-	{
-		oper.rra--;
-		oper.rrb--;
-		ft_rrr(a, b, 1);
-	}
-	while (oper.rra)
-	{
-		ft_rra(a, 1);
-		oper.rra--;
-	}
-	while (oper.rrb)
-	{
-		ft_rrb(b, 1);
-		oper.rrb--;
-	}
-	ft_pa(a, b, 1);
-}
-
-void			ft_kruti(t_stack *a, t_stack *b, t_oper oper)
-{
-	oper.cas = ft_oper_case(oper);
-	if (oper.cas == 1)
-		case1(a, b, oper);
-	else if (oper.cas == 2)
-		case2(a, b, oper);
-	if (oper.cas == 3)
-		case3(a, b, oper);
-	if (oper.cas == 4)
-		case4(a, b, oper);
-}
-
-void			ft_sort(t_stack *a, t_stack *b)
-{
-	int		i;
-	t_oper	oper;
-	t_oper	min_oper;
-	//int 	gg;
-
-	while (b->size != 0)
-	{
-		oper = ft_oper();
-		min_oper = oper;
-		i = 0;
-		while (i < (int)(b->size / 2))
-		{
-			oper.rb = i;
-			oper.ra = ft_find_index(a, b->array[i]);
-			oper.rra = ft_find_low_index(a, b->array[i]);
-			i++;
-			if ((ft_minimalnoe(ft_cena(oper), ft_cena(min_oper))) == ft_cena(oper))
-				min_oper = oper;
-			oper = ft_oper();
-		}
-		while (i < (int)b->size)
-		{
-			oper.rrb = (int)b->size - i;
-			oper.ra = ft_find_index(a, b->array[i]);
-			oper.rra = ft_find_low_index(a, b->array[i]);
-			if (ft_minimalnoe(ft_cena(oper), ft_cena(min_oper)) == ft_cena(oper))
-				min_oper = oper;
-			oper = ft_oper();
-			i++;
-		}
-		ft_kruti(a, b, min_oper);
-		/*for (int g = 0; g < a->size; g++)
-			printf("%i: %i %i\n", g, a->array[g], b->array[g]);
-		if (getchar() == 'a')
-			gg = 0;*/
-	}
 	while (!ft_whilenot(a))
 	{
 		if (ft_find_value(a, ft_minimum(a)) < (int)a->size / 2)
@@ -261,6 +60,32 @@ void			ft_sort(t_stack *a, t_stack *b)
 		else
 			ft_rra(a, 1);
 	}
+}
+
+void			ft_sort(t_stack *a, t_stack *b)
+{
+	int		i;
+	t_oper	oper;
+	t_oper	min_oper;
+
+	while (b->size != 0)
+	{
+		min_oper = ft_init_oper();
+		i = 0;
+		while (i < (int)b->size)
+		{
+			oper = ft_init_oper();
+			oper.rb = i;
+			oper.rrb = (int)b->size - i;
+			oper.ra = ft_find_index(a, b->array[i]);
+			oper.rra = ft_find_low_index(a, b->array[i++]);
+			if (ft_minimalnoe(ft_cena(oper),
+					ft_cena(min_oper)) == ft_cena(oper))
+				min_oper = oper;
+		}
+		ft_kruti(a, b, min_oper);
+	}
+	ft_dokryt(a);
 }
 
 int				main(int num, char **args)

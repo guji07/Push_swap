@@ -32,11 +32,11 @@ typedef struct	s_stack {
 }				t_stack;
 
 typedef	struct	s_oper {
-	int 		ra;
-	int 		rra;
-	int 		rb;
-	int 		rrb;
-	int 		cas;
+	int			ra;
+	int			rra;
+	int			rb;
+	int			rrb;
+	int			cas;
 }				t_oper;
 
 void			ft_sa(t_stack *a, int flag);
@@ -70,11 +70,20 @@ void			ft_sort(t_stack *a, t_stack *b);
 void			ft_sorted(t_stack *a, int c);
 void			try_solve(t_stack *a);
 int				ft_find_index(t_stack *a, int value);
+int				ft_find_low_index(t_stack *a, int value);
 int				ft_find_value(t_stack *a, int value);
-void			ft_insert(t_stack *a, t_stack *b, int ra, int rb);
 int				ft_whilenot(t_stack *a);
-void			ft_low_insert(t_stack *a, t_stack *b, int ra, int rb);
 void			ft_five(t_stack *a, t_stack *b);
 void			ft_costyl3(char ***arr, t_stack *a, int flag);
 void			ft_stackprint(t_stack *a, t_stack *b, int size);
+void			case1(t_stack *a, t_stack *b, t_oper oper);
+void			case2(t_stack *a, t_stack *b, t_oper oper);
+void			case3(t_stack *a, t_stack *b, t_oper oper);
+void			case4(t_stack *a, t_stack *b, t_oper oper);
+int				ft_oper_case(t_oper min);
+int				ft_minimalnoe(int a, int b);
+t_oper			ft_init_oper(void);
+int				ft_cena(t_oper min);
+void			ft_kruti(t_stack *a, t_stack *b, t_oper oper);
+void			ft_dokryt(t_stack *a);
 #endif

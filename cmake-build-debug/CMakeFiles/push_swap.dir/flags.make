@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/tgarkbit/Desktop/check/. -I/Users/tgarkbit/Desktop/check/Libft 
+C_INCLUDES = -I/Users/tgarkbit/Desktop/FINAL/. -I/Users/tgarkbit/Desktop/FINAL/Libft 
 

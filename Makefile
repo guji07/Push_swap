@@ -6,13 +6,14 @@ FILES2 = push_swap_main.c\
 		 push_swap3.c	\
 		 push_swap4.c	\
 		 push_swap5.c	\
+		 cases.c
 
-FILES1 = checker_main.c	\
+FILES1 = checker_main.c
 			
 FILES3 = commands1.c	\
 		 commands2.c	\
 		 commands3.c    \
-		 commands4.c    \
+		 commands4.c
 
 OBJ1 = $(patsubst %.c, %.o, $(FILES1))
 OBJ2 = $(patsubst %.c, %.o, $(FILES2))

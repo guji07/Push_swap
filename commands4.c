@@ -13,11 +13,11 @@
 #include <time.h>
 #include "push_swap.h"
 
-void	ft_stackprint(t_stack *a, t_stack *b, int size)
+void			ft_stackprint(t_stack *a, t_stack *b, int size)
 {
-	int		i;
-	struct	timespec l;
-	struct	timespec tr;
+	int					i;
+	struct timespec		l;
+	struct timespec		tr;
 
 	l.tv_nsec = 90000000;
 	l.tv_sec = 0;

@@ -208,4 +208,5 @@ add_executable(push_swap
         push_swap3.c
         push_swap4.c
         push_swap5.c
+        cases.c
         push_swap_main.c)
