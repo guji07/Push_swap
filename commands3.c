@@ -6,7 +6,7 @@
 /*   By: tgarkbit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/15 18:10:03 by tgarkbit          #+#    #+#             */
-/*   Updated: 2019/11/20 09:33:38 by tgarkbit         ###   ########.fr       */
+/*   Updated: 2019/11/30 00:08:17 by tgarkbit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,10 @@ void	ft_valid(char *str)
 	i = -1;
 	while (str[++i])
 	{
-		if ((str[i] != ' ' &&
-		!(str[i] >= '0' && str[i] <= '9') && str[i] != '-'))
+		if (str[i] == '-' && (str[i + 1] > '9' || str[i + 1] < '0'))
+			ft_die("Error\n");
+		if ((str[i] != ' ' && !(str[i] >= '0'
+		&& str[i] <= '9') && str[i] != '-'))
 			ft_die("Error\n");
 		if (str[i] >= '0' && str[i] <= '9')
 			flag = 1;

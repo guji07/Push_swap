@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.14)
-project(check C)
+project(FINAL C)
 
 set(CMAKE_C_STANDARD 11)
 
 include_directories(.)
 include_directories(Libft)
 
-add_executable(check
+add_executable(checker
         Libft/flag_char.c
         Libft/flag_f1.c
         Libft/flag_f2.c
@@ -99,12 +99,15 @@ add_executable(check
         Libft/get_next_line.c
         Libft/libft.h
         Libft/parsers.c
+        cases.c
         checker_main.c
         commands1.c
         commands2.c
         commands3.c
         commands4.c
-        push_swap.h)
+        push_swap4.c
+        push_swap.h
+        )
 
 add_executable(push_swap
         Libft/flag_char.c
@@ -199,6 +202,7 @@ add_executable(push_swap
         Libft/get_next_line.c
         Libft/libft.h
         Libft/parsers.c
+        cases.c
         commands1.c
         commands2.c
         commands3.c
@@ -208,5 +212,5 @@ add_executable(push_swap
         push_swap3.c
         push_swap4.c
         push_swap5.c
-        cases.c
-        push_swap_main.c)
+        push_swap_main.c
+        )

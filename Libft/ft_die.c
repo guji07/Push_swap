@@ -14,6 +14,6 @@
 
 void	ft_die(char *str)
 {
-	ft_putstr(str);
+	write(2, str, ft_strlen(str));
 	exit(0);
 }

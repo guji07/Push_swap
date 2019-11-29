@@ -1240,9 +1240,22 @@ CMakeFiles/push_swap.dir/Libft/parsers.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/Libft/parsers.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tgarkbit/Desktop/FINAL/Libft/parsers.c -o CMakeFiles/push_swap.dir/Libft/parsers.c.s
 
+CMakeFiles/push_swap.dir/cases.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/cases.c.o: ../cases.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/push_swap.dir/cases.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/cases.c.o   -c /Users/tgarkbit/Desktop/FINAL/cases.c
+
+CMakeFiles/push_swap.dir/cases.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/cases.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tgarkbit/Desktop/FINAL/cases.c > CMakeFiles/push_swap.dir/cases.c.i
+
+CMakeFiles/push_swap.dir/cases.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/cases.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tgarkbit/Desktop/FINAL/cases.c -o CMakeFiles/push_swap.dir/cases.c.s
+
 CMakeFiles/push_swap.dir/commands1.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/commands1.c.o: ../commands1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/push_swap.dir/commands1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/push_swap.dir/commands1.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/commands1.c.o   -c /Users/tgarkbit/Desktop/FINAL/commands1.c
 
 CMakeFiles/push_swap.dir/commands1.c.i: cmake_force
@@ -1255,7 +1268,7 @@ CMakeFiles/push_swap.dir/commands1.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/commands2.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/commands2.c.o: ../commands2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/push_swap.dir/commands2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/push_swap.dir/commands2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/commands2.c.o   -c /Users/tgarkbit/Desktop/FINAL/commands2.c
 
 CMakeFiles/push_swap.dir/commands2.c.i: cmake_force
@@ -1268,7 +1281,7 @@ CMakeFiles/push_swap.dir/commands2.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/commands3.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/commands3.c.o: ../commands3.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/push_swap.dir/commands3.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/push_swap.dir/commands3.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/commands3.c.o   -c /Users/tgarkbit/Desktop/FINAL/commands3.c
 
 CMakeFiles/push_swap.dir/commands3.c.i: cmake_force
@@ -1281,7 +1294,7 @@ CMakeFiles/push_swap.dir/commands3.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/commands4.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/commands4.c.o: ../commands4.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/push_swap.dir/commands4.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/push_swap.dir/commands4.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/commands4.c.o   -c /Users/tgarkbit/Desktop/FINAL/commands4.c
 
 CMakeFiles/push_swap.dir/commands4.c.i: cmake_force
@@ -1294,7 +1307,7 @@ CMakeFiles/push_swap.dir/commands4.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/push_swap2.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/push_swap2.c.o: ../push_swap2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/push_swap.dir/push_swap2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/push_swap.dir/push_swap2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/push_swap2.c.o   -c /Users/tgarkbit/Desktop/FINAL/push_swap2.c
 
 CMakeFiles/push_swap.dir/push_swap2.c.i: cmake_force
@@ -1307,7 +1320,7 @@ CMakeFiles/push_swap.dir/push_swap2.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/push_swap3.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/push_swap3.c.o: ../push_swap3.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/push_swap.dir/push_swap3.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/push_swap.dir/push_swap3.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/push_swap3.c.o   -c /Users/tgarkbit/Desktop/FINAL/push_swap3.c
 
 CMakeFiles/push_swap.dir/push_swap3.c.i: cmake_force
@@ -1320,7 +1333,7 @@ CMakeFiles/push_swap.dir/push_swap3.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/push_swap4.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/push_swap4.c.o: ../push_swap4.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/push_swap.dir/push_swap4.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/push_swap.dir/push_swap4.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/push_swap4.c.o   -c /Users/tgarkbit/Desktop/FINAL/push_swap4.c
 
 CMakeFiles/push_swap.dir/push_swap4.c.i: cmake_force
@@ -1333,7 +1346,7 @@ CMakeFiles/push_swap.dir/push_swap4.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/push_swap5.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/push_swap5.c.o: ../push_swap5.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/push_swap.dir/push_swap5.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/push_swap.dir/push_swap5.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/push_swap5.c.o   -c /Users/tgarkbit/Desktop/FINAL/push_swap5.c
 
 CMakeFiles/push_swap.dir/push_swap5.c.i: cmake_force
@@ -1343,19 +1356,6 @@ CMakeFiles/push_swap.dir/push_swap5.c.i: cmake_force
 CMakeFiles/push_swap.dir/push_swap5.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/push_swap5.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tgarkbit/Desktop/FINAL/push_swap5.c -o CMakeFiles/push_swap.dir/push_swap5.c.s
-
-CMakeFiles/push_swap.dir/cases.c.o: CMakeFiles/push_swap.dir/flags.make
-CMakeFiles/push_swap.dir/cases.c.o: ../cases.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tgarkbit/Desktop/FINAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/push_swap.dir/cases.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/cases.c.o   -c /Users/tgarkbit/Desktop/FINAL/cases.c
-
-CMakeFiles/push_swap.dir/cases.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/cases.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tgarkbit/Desktop/FINAL/cases.c > CMakeFiles/push_swap.dir/cases.c.i
-
-CMakeFiles/push_swap.dir/cases.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/cases.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tgarkbit/Desktop/FINAL/cases.c -o CMakeFiles/push_swap.dir/cases.c.s
 
 CMakeFiles/push_swap.dir/push_swap_main.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/push_swap_main.c.o: ../push_swap_main.c
@@ -1463,6 +1463,7 @@ push_swap_OBJECTS = \
 "CMakeFiles/push_swap.dir/Libft/ft_write.c.o" \
 "CMakeFiles/push_swap.dir/Libft/get_next_line.c.o" \
 "CMakeFiles/push_swap.dir/Libft/parsers.c.o" \
+"CMakeFiles/push_swap.dir/cases.c.o" \
 "CMakeFiles/push_swap.dir/commands1.c.o" \
 "CMakeFiles/push_swap.dir/commands2.c.o" \
 "CMakeFiles/push_swap.dir/commands3.c.o" \
@@ -1471,7 +1472,6 @@ push_swap_OBJECTS = \
 "CMakeFiles/push_swap.dir/push_swap3.c.o" \
 "CMakeFiles/push_swap.dir/push_swap4.c.o" \
 "CMakeFiles/push_swap.dir/push_swap5.c.o" \
-"CMakeFiles/push_swap.dir/cases.c.o" \
 "CMakeFiles/push_swap.dir/push_swap_main.c.o"
 
 # External object files for target push_swap
@@ -1568,6 +1568,7 @@ push_swap: CMakeFiles/push_swap.dir/Libft/ft_unsignedintlen.c.o
 push_swap: CMakeFiles/push_swap.dir/Libft/ft_write.c.o
 push_swap: CMakeFiles/push_swap.dir/Libft/get_next_line.c.o
 push_swap: CMakeFiles/push_swap.dir/Libft/parsers.c.o
+push_swap: CMakeFiles/push_swap.dir/cases.c.o
 push_swap: CMakeFiles/push_swap.dir/commands1.c.o
 push_swap: CMakeFiles/push_swap.dir/commands2.c.o
 push_swap: CMakeFiles/push_swap.dir/commands3.c.o
@@ -1576,7 +1577,6 @@ push_swap: CMakeFiles/push_swap.dir/push_swap2.c.o
 push_swap: CMakeFiles/push_swap.dir/push_swap3.c.o
 push_swap: CMakeFiles/push_swap.dir/push_swap4.c.o
 push_swap: CMakeFiles/push_swap.dir/push_swap5.c.o
-push_swap: CMakeFiles/push_swap.dir/cases.c.o
 push_swap: CMakeFiles/push_swap.dir/push_swap_main.c.o
 push_swap: CMakeFiles/push_swap.dir/build.make
 push_swap: CMakeFiles/push_swap.dir/link.txt
