@@ -6,7 +6,7 @@
 /*   By: tgarkbit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/15 19:39:36 by tgarkbit          #+#    #+#             */
-/*   Updated: 2019/11/20 09:34:45 by tgarkbit         ###   ########.fr       */
+/*   Updated: 2019/11/25 15:15:27 by tgarkbit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ int				ft_min(t_stack *a)
 
 int				ft_bot(t_stack *a)
 {
-	if (a->array[0] > a->array[1] && a->array[0] < a->array[2])
+	if ((a->array[0] > a->array[1] && a->array[0] < a->array[2]) ||
+	(a->array[0] < a->array[1] && a->array[0] > a->array[2]))
 		return (a->array[0]);
 	if ((a->array[1] > a->array[0] && a->array[1] < a->array[2]) ||
 		(a->array[1] < a->array[0] && a->array[1] > a->array[2]))
@@ -33,7 +34,7 @@ int				ft_bot(t_stack *a)
 
 int				ft_maximum(t_stack *a)
 {
-	if (a->array[0] > a->array[2])
+	if (a->array[0] > a->array[2] && a->array[0] > a->array[1])
 		return (a->array[0]);
 	if (a->array[1] > a->array[0] && a->array[1] > a->array[2])
 		return (a->array[1]);

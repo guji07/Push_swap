@@ -31,6 +31,14 @@ typedef struct	s_stack {
 	size_t		size;
 }				t_stack;
 
+typedef	struct	s_oper {
+	int 		ra;
+	int 		rra;
+	int 		rb;
+	int 		rrb;
+	int 		cas;
+}				t_oper;
+
 void			ft_sa(t_stack *a, int flag);
 void			ft_sb(t_stack *a, int flag);
 void			ft_ss(t_stack *a, t_stack *b, int flag);

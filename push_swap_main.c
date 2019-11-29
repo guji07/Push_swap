@@ -6,7 +6,7 @@
 /*   By: tgarkbit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/15 19:39:49 by tgarkbit          #+#    #+#             */
-/*   Updated: 2019/11/20 09:34:30 by tgarkbit         ###   ########.fr       */
+/*   Updated: 2019/11/25 15:14:38 by tgarkbit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,45 +51,208 @@ static	void	ft_get_args(int num, char **args)
 	free(a.array);
 }
 
-int				ft_costyl2(int *i, t_stack *a, t_stack *b, int min)
+t_oper			ft_oper(void)
 {
-	int		rb;
-	int		ra;
-	int		index;
+	t_oper		oper;
 
-	index = 0;
-	while (*i < (int)b->size)
+	oper.ra = INT_MAX - 500;
+	oper.rb = INT_MAX - 500;
+	oper.rra = INT_MAX - 500;
+	oper.rrb = INT_MAX - 500;
+	oper.cas = 0;
+	return (oper);
+}
+
+int				ft_find_low_index(t_stack *a, int value)
+{
+	int		i;
+
+	i = (int)a->size - 1;
+	while (i >= 0)
 	{
-		rb = *i;
-		ra = ft_find_index(a, b->array[*i]) + 1;
-		if (ra + rb <= min)
-		{
-			min = ra + rb;
-			index = *i;
-		}
-		(*i)++;
+		if (a->array[i] > value && (i > 0) && a->array[i - 1] < value)
+			return ((int)a->size - i);
+		if (i == (int)a->size - 1)
+			if (a->array[a->size - 1] < value && a->array[0] > value)
+				return (0);
+		i--;
 	}
-	return (index);
+	return (a->size);
+}
+
+int 			ft_minimalnoe(int a, int b)
+{
+	if (a < b)
+		return (a);
+	return (b);
+}
+
+int 			ft_oper_case(t_oper min)
+{
+	int 	min1;
+	int 	min2;
+	int 	min3;
+	int 	min4;
+
+	min1 = min.ra + min.rb - ft_minimalnoe(min.ra, min.rb);
+	min2 = min.ra + min.rrb;
+	min3 = min.rra + min.rb;
+	min4 = min.rra + min.rrb - ft_minimalnoe(min.rra, min.rrb);
+	if (min1 <= min2 && min1 <= min3 && min1 <= min4)
+		return (1);
+	if (min2 <= min1 && min2 <= min3 && min3 <= min4)
+		return (2);
+	if (min3 <= min1 && min3 <= min2 && min3 <= min4)
+		return (3);
+	return (4);
+}
+
+int				ft_cena(t_oper min)
+{
+	int 	min1;
+	int 	min2;
+	int 	min3;
+	int 	min4;
+
+	if ((min1 = min.ra + min.rb - ft_minimalnoe(min.ra, min.rb)) < 0)
+		min1 = INT_MAX;
+	if((min2 = min.ra + min.rrb) < 0)
+		min2 = INT_MAX;
+	if ((min3 = min.rra + min.rb) < 0)
+		min3 = INT_MAX;
+	if ((min4 = min.rra + min.rrb - ft_minimalnoe(min.rra, min.rrb)) < 0)
+		min4 = INT_MAX;
+	if (min1 <= min2 && min1 <= min3 && min1 <= min4)
+		return (min1);
+	if (min2 <= min1 && min2 <= min3 && min3 <= min4)
+		return (min2);
+	if (min3 <= min1 && min3 <= min2 && min3 <= min4)
+		return (min3);
+	return (min4);
+}
+
+void 			case1(t_stack *a, t_stack *b, t_oper oper)
+{
+	while (oper.ra && oper.rb)
+	{
+		oper.ra--;
+		oper.rb--;
+		ft_rr(a, b, 1);
+	}
+	while (oper.ra)
+	{
+		ft_ra(a, 1);
+		oper.ra--;
+	}
+	while (oper.rb)
+	{
+		ft_rb(b, 1);
+		oper.rb--;
+	}
+	ft_pa(a, b, 1);
+}
+
+void			case2(t_stack *a, t_stack *b, t_oper oper)
+{
+	while (oper.ra)
+	{
+		ft_ra(a, 1);
+		oper.ra--;
+	}
+	while (oper.rrb)
+	{
+		ft_rrb(b, 1);
+		oper.rrb--;
+	}
+	ft_pa(a, b, 1);
+}
+
+void			case3(t_stack *a, t_stack *b, t_oper oper)
+{
+	while (oper.rra)
+	{
+		oper.rra--;
+		ft_rra(a,1);
+	}
+	while (oper.rb)
+	{
+		oper.rb--;
+		ft_rb(b, 1);
+	}
+	ft_pa(a, b, 1);
+}
+
+void			case4(t_stack *a, t_stack *b, t_oper oper)
+{
+	while (oper.rra && oper.rrb)
+	{
+		oper.rra--;
+		oper.rrb--;
+		ft_rrr(a, b, 1);
+	}
+	while (oper.rra)
+	{
+		ft_rra(a, 1);
+		oper.rra--;
+	}
+	while (oper.rrb)
+	{
+		ft_rrb(b, 1);
+		oper.rrb--;
+	}
+	ft_pa(a, b, 1);
+}
+
+void			ft_kruti(t_stack *a, t_stack *b, t_oper oper)
+{
+	oper.cas = ft_oper_case(oper);
+	if (oper.cas == 1)
+		case1(a, b, oper);
+	else if (oper.cas == 2)
+		case2(a, b, oper);
+	if (oper.cas == 3)
+		case3(a, b, oper);
+	if (oper.cas == 4)
+		case4(a, b, oper);
 }
 
 void			ft_sort(t_stack *a, t_stack *b)
 {
-	int		ra;
-	int		rb;
-	int		min;
 	int		i;
+	t_oper	oper;
+	t_oper	min_oper;
+	//int 	gg;
 
-	i = 0;
 	while (b->size != 0)
 	{
-		i = (i > (int)b->size ? 0 : i);
-		min = ft_find_index(a, b->array[0]) + 1;
-		rb = ft_costyl2(&i, a, b, min);
-		ra = ft_find_index(a, b->array[rb]) + 1;
-		if (ra < (int)a->size / 2)
-			ft_insert(a, b, ra, rb);
-		else
-			ft_low_insert(a, b, ra, rb);
+		oper = ft_oper();
+		min_oper = oper;
+		i = 0;
+		while (i < (int)(b->size / 2))
+		{
+			oper.rb = i;
+			oper.ra = ft_find_index(a, b->array[i]);
+			oper.rra = ft_find_low_index(a, b->array[i]);
+			i++;
+			if ((ft_minimalnoe(ft_cena(oper), ft_cena(min_oper))) == ft_cena(oper))
+				min_oper = oper;
+			oper = ft_oper();
+		}
+		while (i < (int)b->size)
+		{
+			oper.rrb = (int)b->size - i;
+			oper.ra = ft_find_index(a, b->array[i]);
+			oper.rra = ft_find_low_index(a, b->array[i]);
+			if (ft_minimalnoe(ft_cena(oper), ft_cena(min_oper)) == ft_cena(oper))
+				min_oper = oper;
+			oper = ft_oper();
+			i++;
+		}
+		ft_kruti(a, b, min_oper);
+		/*for (int g = 0; g < a->size; g++)
+			printf("%i: %i %i\n", g, a->array[g], b->array[g]);
+		if (getchar() == 'a')
+			gg = 0;*/
 	}
 	while (!ft_whilenot(a))
 	{

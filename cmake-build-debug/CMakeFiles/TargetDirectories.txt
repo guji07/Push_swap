@@ -1,4 +1,4 @@
-/Users/tgarkbit/tgarkbit2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/tgarkbit/tgarkbit2/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/tgarkbit/tgarkbit2/cmake-build-debug/CMakeFiles/checker.dir
-/Users/tgarkbit/tgarkbit2/cmake-build-debug/CMakeFiles/pushswap.dir
+/Users/tgarkbit/Desktop/check/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/tgarkbit/Desktop/check/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/tgarkbit/Desktop/check/cmake-build-debug/CMakeFiles/push_swap.dir
+/Users/tgarkbit/Desktop/check/cmake-build-debug/CMakeFiles/check.dir
