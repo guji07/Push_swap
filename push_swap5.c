@@ -23,7 +23,7 @@ int				ft_find_value(t_stack *a, int value)
 	return (i);
 }
 
-void			ft_firstdo(t_stack *a, t_stack *b)
+void			ft_firstdo(t_stack *a, t_stack *b, int flag)
 {
 	int		mid;
 	int		min;
@@ -44,6 +44,8 @@ void			ft_firstdo(t_stack *a, t_stack *b)
 		}
 		else
 			ft_ra(a, 1);
+		if (flag == 1)
+			ft_stackprint(a, b);
 	}
 	ft_three(a);
 }
@@ -77,7 +79,7 @@ int				ft_find_low_index(t_stack *a, int value)
 	return (a->size);
 }
 
-void			try_solve(t_stack *a)
+void			try_solve(t_stack *a, int flag)
 {
 	t_stack		b;
 
@@ -93,8 +95,8 @@ void			try_solve(t_stack *a)
 		ft_five(a, &b);
 	else
 	{
-		ft_firstdo(a, &b);
-		ft_sort(a, &b);
+		ft_firstdo(a, &b, flag);
+		ft_sort(a, &b, flag);
 	}
 	if (b.array)
 		free(b.array);

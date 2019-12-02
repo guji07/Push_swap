@@ -98,12 +98,12 @@ void	ft_sorted(t_stack *a, int c)
 
 	i = -1;
 	if (c != 0)
-		ft_die("KO\n");
+		ft_die2("KO\n");
 	while (++i < (int)(a->size - 1))
 		if (a->array[i] > a->array[i + 1])
 		{
 			free(a->array);
-			ft_die("KO\n");
+			ft_die2("KO\n");
 		}
-	ft_die("OK\n");
+	ft_die2("OK\n");
 }

@@ -6,7 +6,7 @@
 /*   By: tgarkbit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/19 18:01:15 by tgarkbit          #+#    #+#             */
-/*   Updated: 2019/11/19 18:01:51 by tgarkbit         ###   ########.fr       */
+/*   Updated: 2019/11/30 01:21:26 by tgarkbit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int					ft_atoidie(const char *str)
 			ft_die("Error\n");
 		if (sum < 0 && z == 1)
 			ft_die("Error\n");
-		if (sum > (z ? INT_MAX : 2147483648))
+		if (sum > (!z ? INT_MAX : 2147483648))
 			ft_die("Error\n");
 		str++;
 	}

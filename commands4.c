@@ -13,7 +13,7 @@
 #include <time.h>
 #include "push_swap.h"
 
-void			ft_stackprint(t_stack *a, t_stack *b, int size)
+void			ft_stackprint(t_stack *a, t_stack *b)
 {
 	int					i;
 	struct timespec		l;
@@ -25,7 +25,7 @@ void			ft_stackprint(t_stack *a, t_stack *b, int size)
 	write(1, "\033[2J", 5);
 	write(1, "Stack A: Stack B:\n", 18);
 	i = -1;
-	while (i++ < size - 2)
+	while (i++ < (int)a->size + (int)b->size - 2)
 	{
 		ft_printf(ANSI_COLOR_RED "%12i" ANSI_COLOR_RESET,
 				i > (int)a->size ? 0 : (int)a->array[i]);
@@ -37,4 +37,10 @@ void			ft_stackprint(t_stack *a, t_stack *b, int size)
 	ft_printf(ANSI_COLOR_GREEN " %12i\n" ANSI_COLOR_RESET,
 			i > (int)b->size ? 0 : (int)b->array[i]);
 	nanosleep(&l, &tr);
+}
+
+void			ft_die2(char *str)
+{
+	write(1, str, ft_strlen(str));
+	exit(0);
 }

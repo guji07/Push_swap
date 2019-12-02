@@ -43,12 +43,10 @@ void	ft_checkinstructions(t_stack *a, int flag)
 	char	*str;
 	int		cmd;
 	t_stack	b;
-	int		size;
 
 	ft_check_int(a->array, a->size);
 	b.array = ft_intmalloc(a->size);
 	b.size = 0;
-	size = a->size;
 	while (get_next_line(0, &str))
 	{
 		cmd = ft_checkcmd(str);
@@ -58,7 +56,7 @@ void	ft_checkinstructions(t_stack *a, int flag)
 			ft_makeinstructions(a, &b, cmd);
 		free(str);
 		if (flag == 1)
-			ft_stackprint(a, &b, size);
+			ft_stackprint(a, &b);
 	}
 	ft_sorted(a, b.size);
 	free(b.array);

@@ -24,7 +24,7 @@ static	void	ft_costyl(char ***arr, char **str, int *i, t_stack *a)
 	*i = -1;
 }
 
-static	void	ft_get_args(int num, char **args)
+static	void	ft_get_args(int num, char **args, int flag)
 {
 	char		*str;
 	int			len;
@@ -47,11 +47,11 @@ static	void	ft_get_args(int num, char **args)
 		a.array[i] = ft_atoidie(arr[i]);
 	ft_free_ar(i, arr);
 	a.size = i;
-	try_solve(&a);
+	try_solve(&a, flag);
 	free(a.array);
 }
 
-void			ft_dokryt(t_stack *a)
+void			ft_dokryt(t_stack *a, t_stack *b, int flag)
 {
 	while (!ft_whilenot(a))
 	{
@@ -59,10 +59,12 @@ void			ft_dokryt(t_stack *a)
 			ft_ra(a, 1);
 		else
 			ft_rra(a, 1);
+		if (flag == 1)
+			ft_stackprint(a, b);
 	}
 }
 
-void			ft_sort(t_stack *a, t_stack *b)
+void			ft_sort(t_stack *a, t_stack *b, int flag)
 {
 	int		i;
 	t_oper	oper;
@@ -84,13 +86,21 @@ void			ft_sort(t_stack *a, t_stack *b)
 				min_oper = oper;
 		}
 		ft_kruti(a, b, min_oper);
+		if (flag == 1)
+			ft_stackprint(a, b);
 	}
-	ft_dokryt(a);
+	ft_dokryt(a, b, flag);
 }
 
 int				main(int num, char **args)
 {
-	if (num != 1)
-		ft_get_args(num, args);
-	return (0);
+	if (num > 1)
+	{
+		if (ft_strequ("-v", args[1]))
+			ft_get_args(num - 1, args + 1, 1);
+		else
+			ft_get_args(num, args, 0);
+	}
+	if (num == 1)
+		return (0);
 }
